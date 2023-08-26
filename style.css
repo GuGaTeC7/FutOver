@@ -131,6 +131,12 @@ border-color: rgb(255, 255, 255);
     color: #000000;
   }
 
+.topN {
+  margin: 0 0 15px 20px;
+  color: rgba(0,0,0,.8);
+  font-size: 28px;
+}
+
 /* ASSINATURA */
 .assinaturaDiv {
   display: flex;
@@ -280,7 +286,7 @@ border-color: rgb(255, 255, 255);
   -moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .outras-noticias-1-single {
@@ -356,3 +362,9 @@ border-color: rgb(255, 255, 255);
 .cards p {
   font-size: 15px;
 }
+
+.card {
+  border: 25px solid black;
+}
+
+
