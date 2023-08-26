@@ -24,7 +24,6 @@ nav {
   margin-left: 4px;
 }
 
-
 #nav1:hover {
   color: rgb(2, 143, 2);
   border-width: 3px !important; 
@@ -348,23 +347,23 @@ border-color: rgb(255, 255, 255);
 }
 
 /* CARDS NOTÍCIAS */
-.cards {
-  width: 65%;
-  margin-left: 30px;
-  margin-top: 15px;
+.cardN {
+  width: 14%;
+  margin: 15px 100px 5px 0;
 }
 
-.cards h5 {
+.containerCard {
+  width: 100%;
+}
+
+.cardN img {
+  width: 100%;
+  border-radius: 2%;
+}
+
+.cardN h5, p {
+  color: #000000;
+	font-weight: 700;
+  margin: 5px 0 0 5px;
   font-size: 17px;
-  font-weight: bold;
 }
-
-.cards p {
-  font-size: 15px;
-}
-
-.card {
-  border: 25px solid black;
-}
-
-
