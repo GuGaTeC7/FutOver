@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&disp');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+body{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #239b3b, #239b3b );
+}
+
+nav {
+  background-color: rgba(0, 141, 24, 0.856);
+}
+
+.logo {
+  width: 60px;
+  margin-right: 50px;
+}
+
+#nav1 {
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-weight: 700;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  font-size: 17.5px;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
+#nav1:hover {
+  color: rgb(2, 143, 2);
+  border-width: 3px !important; 
+  border-color: #ffffff;
+}
+
+#navbarSupportedContent {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+#btnLogin {
+  text-align: right;
+  border-width: 2px; 
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+#btnLogin:hover {
+  border-color: rgb(0, 0, 0); 
+
+}
+
+#btnCadastro {
+  text-align: right;
+  border-width: 2px; 
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-weight: 650;
+
+}
+
+#btnCadastro:hover {
+border-color: rgb(255, 255, 255); 
+}
+
+.form-controlC {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  margin: 0 100px 0 0;
+}
+
+.form-controlC:hover {
+  border-color: rgb(36, 216, 0);
+}
+
+
+.imgPesq {
+  margin: 2px 3px 0 0;
+}
+
+/* SEARCH BAR */   
+.box{
+  width: 10px;
+  height: 50px;
+}
+
+.container-2{
+  width: 20px;
+  vertical-align: middle;
+  white-space:nowrap;
+  position:relative;
+}
+
+.container-2 input#search{
+  width: 20px;
+  height: 40px;
+  background: #ffffff;
+  border:none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 35px;
+  border-radius: 5px;
+  color: #000000;
+  transition: width .55s ease;
+  margin-top: 6px;
+}
+
+
+.container-2 .icon{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 14px;
+  z-index: 1;
+  color: #000000;
+}
+
+
+.container-2 input#search:focus, .container-2 input#search:active{
+  outline:none;
+  width: 300px;
+}
+
+.container-2:hover input#search{
+  width: 300px;
+}
+
+.container-2:hover .icon{
+  color: #000000;
+}
+
+.topN {
+margin: 0 0 15px 20px;
+color: rgba(0,0,0,.8);
+font-size: 28px;
+}
+
+/**/
+#container{
+  max-width: 700px;
+  width: 80%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+#container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+#container .title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #239b3b, #239b3b );
+}
+#container form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+}
+form .button{
+  height: 45px;
+  margin: 45px 0;
+  }
+  form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #239b3b, #239b3b );
+  }
+form .button input:hover{
+  background: linear-gradient(135deg, #239b3b, #239b3b );
+}
