@@ -348,23 +348,38 @@ border-color: rgb(255, 255, 255);
 }
 
 /* CARDS NOTÍCIAS */
-.cardN {
-  width: 24%;
-  margin: 15px 40px 5px 0;
+main.cards {
+  display: flex;
+  padding: 32px;
 }
 
-.containerCard {
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 256px;
+  margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+  margin-left: 0;
+}
+
+.cardU {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.cardU .icon {
+  width: 224px;
+  height: 224px;
+}
+
+.cardU img {
   width: 100%;
-}
-
-.cardN img {
-  width: 100%;
-  border-radius: 2%;
-}
-
-.cardN h5, p {
-  color: #000000;
-	font-weight: 700;
-  margin: 5px 0 0 5px;
-  font-size: 17px;
 }
