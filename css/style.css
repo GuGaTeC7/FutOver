@@ -38,6 +38,8 @@ nav {
 }
 
 #btnLogin {
+  height: 50px;
+  margin-right: 5px;
   text-align: right;
   border-width: 2px; 
   color: rgb(0, 0, 0);
@@ -273,6 +275,10 @@ border-color: rgb(255, 255, 255);
   background-color: rgb(0,0,0,0.6);
 }
 
+.noticia-destaque:hover .noticia-destaque-single {
+  transform: scale(1.1)
+}
+
 /* EFEITO ZOOM */
 
 .noticia-destaque-single {
@@ -287,7 +293,22 @@ border-color: rgb(255, 255, 255);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
   border: 1px solid white;
+
 }
+
+.noticia-destaque-single:hover h3 {
+  background-color: #000000;
+}
+
+.outras-noticias-1-single:hover h3 {
+  background-color: #000000;
+}
+
+.outras-noticias-2-single:hover h3 {
+  background-color: #000000;
+}
+
+
 
 .outras-noticias-1-single {
 	-moz-transition: all 0.3s;
@@ -352,6 +373,7 @@ main.cards {
   display: flex;
   padding: 32px;
   width: 100%;
+  cursor: default;
 }
 
 .card {
@@ -368,6 +390,7 @@ main.cards {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 8px;
 } 
 
 .icon img {

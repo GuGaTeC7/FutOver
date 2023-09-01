@@ -14,7 +14,9 @@ body{
 }
 
 nav {
-  background-color: rgba(0, 141, 24, 0.856);
+  background-color: rgb(36, 36, 36);
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .logo {
@@ -45,6 +47,8 @@ nav {
 }
 
 #btnLogin {
+  height: 50px;
+  margin-right: 5px;
   text-align: right;
   border-width: 2px; 
   color: rgb(0, 0, 0);
@@ -104,7 +108,7 @@ border-color: rgb(255, 255, 255);
   height: 40px;
   background: #ffffff;
   border:none;
-  font-size: 10pt;
+  font-size: 10px;
   float: left;
   color: #262626;
   padding-left: 35px;
@@ -151,6 +155,10 @@ font-size: 28px;
   padding: 25px 30px;
   border-radius: 5px;
   margin-top: 1%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 #container .title{
   font-size: 25px;

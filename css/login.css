@@ -13,10 +13,19 @@ body{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    background: linear-gradient(135deg, #239b3b, #239b3b );
+  }
+
+  .navL {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   nav {
-    background-color: rgba(0, 141, 24, 0.856);
+    background-color: rgb(36, 36, 36);
+    padding-bottom: 5px;
+    padding-top: 5px;
   }
   
   .logo {
@@ -47,6 +56,8 @@ body{
   }
   
   #btnLogin {
+    height: 50px;
+    margin-right: 5px;
     text-align: right;
     border-width: 2px; 
     color: rgb(0, 0, 0);
@@ -106,7 +117,6 @@ body{
   height: 40px;
   background: #ffffff;
   border:none;
-  font-size: 10pt;
   float: left;
   color: #262626;
   padding-left: 35px;
@@ -151,10 +161,14 @@ font-size: 28px;
     height: 85vh;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
   
   .Login{
-    background-color: rgb(224, 224, 224);
+    background-color: #fff;
     border-radius: 20px;
     width: 500px;
     padding: 35px;
@@ -173,11 +187,27 @@ font-size: 28px;
     margin-top: 10px;
     background-color: #ffffff;
     padding-left: 10px;
-    color: #000000;
+    color: #4e4e4e70;
     height: 45px;
     outline: none;
     border-radius: 8px;
-    border: none;
+    border: 1px solid;
+  }
+
+  .input-submit {
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding-left: 10px;
+    color: #4e4e4e70;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+    border: none !important;
+    color: #fff !important;
+  }
+
+  .Login p {
+    margin-top: 10px;
   }
   
   .Login img{
@@ -206,12 +236,9 @@ font-size: 28px;
   
   p{
     color: black;
-    margin-left: 60px;
-    
+    margin-left: 45px;
   }
   
   a{
     color: #5568FE;
-    text-decoration: none;
-    margin-left: 5px;
   }
