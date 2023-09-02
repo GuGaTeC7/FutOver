@@ -7,7 +7,7 @@
   }
 
 nav {
-  background-color: rgba(0, 141, 24, 0.856);
+  background-image: linear-gradient(45deg, #242424 50%, #028f02 50%);
 }
 
 .logo {
@@ -26,7 +26,7 @@ nav {
 }
 
 #nav1:hover {
-  color: rgb(2, 143, 2);
+  color: #028f02;
   border-width: 3px !important; 
   border-color: #ffffff;
 }
@@ -96,7 +96,7 @@ border-color: rgb(255, 255, 255);
   }
   
   .container-2 input#search{
-    width: 20px;
+    width: 10px;
     height: 40px;
     background: #ffffff;
     border:none;
@@ -122,11 +122,11 @@ border-color: rgb(255, 255, 255);
 
   .container-2 input#search:focus, .container-2 input#search:active{
     outline:none;
-    width: 300px;
+    width: 250px;
   }
   
   .container-2:hover input#search{
-    width: 300px;
+    width: 250px;
   }
   
   .container-2:hover .icon{
@@ -376,8 +376,11 @@ main.cards {
   cursor: default;
 }
 
+.card:first-child {
+  margin-left: 0;
+}
 .card {
-  margin-left: 50px !important;
+  margin-left: 30px !important;
 }
 
 .card:first-child {
@@ -385,7 +388,6 @@ main.cards {
 }
 
 .cardU {
-  width: 220px;
   height: 165px;
   display: flex;
   flex-direction: column;
@@ -598,4 +600,44 @@ table{
 
 .custom-font {
   margin-bottom: 0 !important;
+}
+
+/* CARD HORIZONTAL*/
+.card1-hor {
+  display: flex;
+  flex-direction: row;
+  width: 550px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.card1-hor img:first-child {
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 20px;
+
+}
+
+.card1-hor h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.txt-hor {
+  margin: 10px 0 0 10px;
+}
+
+.creditos{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.salvar {
+  width: 23px !important;
+  height: 23px !important;
+}
+
+.salvar:hover {
+  filter: invert(75%);
 }
