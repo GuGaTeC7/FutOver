@@ -420,13 +420,10 @@ main.cards {
 
 table {
   border-collapse: collapse;
-  
-  border: 1px solid #a5a5a5;
 }
 th, td {
-  border: 1px solid #a8a8a8;
-  
-  text-align: center;
+  border-bottom: 1px solid #a8a8a8;
+  text-align: center !important;
 }
 th {
   background-color: #ffffff;
@@ -436,7 +433,6 @@ tr:nth-child(even) {
 }
 table{
       width: 400px;
-      border: 1px solid rgba(247, 3, 3, 0.991);
       padding: 10px;
   }
   th{
@@ -557,14 +553,13 @@ table{
 
 .element{
   width: 450px;
-  height: 300px;
-  padding: 0 24px;
+  height: 340px;
   padding-top: 0px;
   padding-right: 24px;
   padding-bottom: 0px;
   padding-left: 24px;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid gray;
   box-shadow: 1px 1px 4px black;
 }
