@@ -601,31 +601,38 @@ table{
 .card1-hor {
   display: flex;
   flex-direction: row;
-  width: 550px;
+  width: 630px;
+  height: 300px;
   margin-left: 30px;
   margin-top: 50px;
 }
 
 .card1-hor img:first-child {
-  width: 200px;
-  height: 220px;
+  width: 300px;
+  height: 280px;
   object-fit: cover;
   margin-bottom: 20px;
 
 }
 
 .card1-hor h3 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .txt-hor {
-  margin: 10px 0 0 10px;
+  font-size: 14.5px;
+  margin: 40px 0 0 10px;
+}
+
+.txt-hor p {
+  margin-top: 20px;
 }
 
 .creditos{
   display: flex;
   justify-content: flex-end;
+  margin-top: 16px
 }
 
 .salvar {

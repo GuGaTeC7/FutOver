@@ -7,10 +7,10 @@
   }
 
 body{
+  background-image: linear-gradient(90deg, #028f02 50%, #242424 50%);
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #239b3b, #239b3b );
 }
 
 nav {
