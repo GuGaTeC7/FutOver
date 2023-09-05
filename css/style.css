@@ -197,6 +197,7 @@ border-color: rgb(255, 255, 255);
   background-color: rgb(0,0,0,0.6);
   font-weight: 700;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  font-size: 25px;
 }
 
 .outras-noticias-1 {
@@ -225,6 +226,7 @@ border-color: rgb(255, 255, 255);
   color: white;
   width: 100%;
   background-color: rgb(0,0,0,0.6);
+  font-size: 25px;
 }
 
 .outras-noticias-2-single {
@@ -241,6 +243,7 @@ border-color: rgb(255, 255, 255);
   color: white;
   width: 100%;
   background-color: rgb(0,0,0,0.6);
+  font-size: 25px;
 }
 
 .outras-noticias-3-single {
@@ -257,6 +260,7 @@ border-color: rgb(255, 255, 255);
   color: white;
   width: 100%;
   background-color: rgb(0,0,0,0.6);
+  font-size: 25px;
 }
 
 .outras-noticias-4-single {
@@ -612,7 +616,7 @@ table{
   height: 280px;
   object-fit: cover;
   margin-bottom: 20px;
-
+  border-radius: 2px;
 }
 
 .card1-hor h3 {
@@ -622,7 +626,7 @@ table{
 
 .txt-hor {
   font-size: 14.5px;
-  margin: 40px 0 0 10px;
+  margin: 40px 0 0 12.5px;
 }
 
 .txt-hor p {
@@ -632,7 +636,7 @@ table{
 .creditos{
   display: flex;
   justify-content: flex-end;
-  margin-top: 16px
+  margin-top: 14px
 }
 
 .salvar {
@@ -746,6 +750,11 @@ footer{
     border-radius: 3px;
     font-weight: bold;
     background-color: white;
+    transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.96);
 }
 
 .footer-col .form-sub button:hover {
