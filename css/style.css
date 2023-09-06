@@ -641,3 +641,59 @@ table{
 .salvar:hover {
   filter: invert(75%);
 }
+
+/* TELA JOGOS */
+.container {
+  display: flex;
+  grid-gap: 1rem;
+  margin-top: 15px;
+  align-items: center;
+  
+}
+
+.dia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(87, 87, 87, 0.301);
+  width: 85px;
+  height: 65px;
+  border-radius: 12%;
+}
+.dia:hover {
+  animation-name: dia;
+  animation-duration: 0.5s;
+  border-color: rgba(0, 0, 0, 0.733);
+  cursor: pointer;
+}
+
+.dia h3 {
+  font-weight: 500;
+}
+
+.seta:hover {
+  background-color: #47474741;
+  border-radius: 50%;
+  animation-name: seta;
+  animation-duration: 0.5s;
+  cursor: pointer;
+}
+
+
+.icon-seta {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+@keyframes seta {
+  0%   {background-color: #4747470c;}
+  100% {background-color: #47474741;}
+}
+
+
+@keyframes dia {
+  0%   {border-color: rgba(0, 0, 0, 0.39);}
+  50%  {border-color: rgba(0, 0, 0, 0.596);}
+  100% {border-color: rgba(0, 0, 0, 0.733);}
+}
