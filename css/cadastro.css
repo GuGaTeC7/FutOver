@@ -7,10 +7,10 @@
   }
 
 body{
+  background-image: linear-gradient(90deg, #028f02 50%, #242424 50%);
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #239b3b, #239b3b );
 }
 
 nav {
@@ -154,11 +154,8 @@ font-size: 28px;
   background: #fff;
   padding: 25px 30px;
   border-radius: 5px;
-  margin-top: 1%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  margin-top: 2.5%;
+
 }
 #container .title{
   font-size: 25px;
@@ -217,3 +214,135 @@ form .button{
 form .button input:hover{
   background: linear-gradient(135deg, #239b3b, #239b3b );
 }
+
+ /* FOOTER */
+
+ footer{
+  background-color: #239b3b;
+  padding: 50px 35px 20px 35px;
+  width: 100%;
+  margin-top: 7%;
+  bottom: 0;
+  left: 0;
+}
+.container-footer{
+  max-width: 1400px;
+  margin: auto;
+}
+.row-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+
+}
+.footer-col ul{
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer-col ul{
+  list-style: none;
+}
+
+.footer-col ul li{
+  margin: 10px;
+}
+
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+
+}
+.footer-col ul li a:hover{
+  color: #cecdcd;
+}
+.container-footer .medias-socias{
+  margin-top: 30px;
+
+}
+.container-footer .medias-socias a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  transition: all 0 .5s ease;
+
+
+}
+.container-footer .medias-socias a i{
+  font-size: 20px;
+
+
+}
+.container-footer .medias-socias a:hover{
+  color : #0f4900ce;
+  background-color: white;
+
+}
+.footer-col .form-sub input{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  background-color: #239b3b;
+}
+.footer-col .form-sub input::placeholder{
+  color: white;
+
+}
+.footer-col .form-sub button{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+button:active {
+transform: scale(0.96);
+}
+
+.footer-col .form-sub button:hover {
+background-color: rgb(216, 216, 216);
+}
+
+@media (max-width:800px) {
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+
+  }
+}
+@media (max-width:600px){
+  .footer-col{
+      width: 100%;
+
+  }
+}
+

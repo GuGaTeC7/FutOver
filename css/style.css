@@ -197,6 +197,7 @@ border-color: rgb(255, 255, 255);
   background-color: rgb(0,0,0,0.6);
   font-weight: 700;
 	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  font-size: 25px;
 }
 
 .outras-noticias-1 {
@@ -225,6 +226,7 @@ border-color: rgb(255, 255, 255);
   color: white;
   width: 100%;
   background-color: rgb(0,0,0,0.6);
+  font-size: 25px;
 }
 
 .outras-noticias-2-single {
@@ -241,6 +243,7 @@ border-color: rgb(255, 255, 255);
   color: white;
   width: 100%;
   background-color: rgb(0,0,0,0.6);
+  font-size: 25px;
 }
 
 .outras-noticias-3-single {
@@ -257,6 +260,7 @@ border-color: rgb(255, 255, 255);
   color: white;
   width: 100%;
   background-color: rgb(0,0,0,0.6);
+  font-size: 25px;
 }
 
 .outras-noticias-4-single {
@@ -420,13 +424,10 @@ main.cards {
 
 table {
   border-collapse: collapse;
-  
-  border: 1px solid #a5a5a5;
 }
 th, td {
-  border: 1px solid #a8a8a8;
-  
-  text-align: center;
+  border-bottom: 1px solid #a8a8a8;
+  text-align: center !important;
 }
 th {
   background-color: #ffffff;
@@ -436,7 +437,6 @@ tr:nth-child(even) {
 }
 table{
       width: 400px;
-      border: 1px solid rgba(247, 3, 3, 0.991);
       padding: 10px;
   }
   th{
@@ -557,14 +557,13 @@ table{
 
 .element{
   width: 450px;
-  height: 300px;
-  padding: 0 24px;
+  height: 340px;
   padding-top: 0px;
   padding-right: 24px;
   padding-bottom: 0px;
   padding-left: 24px;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid gray;
   box-shadow: 1px 1px 4px black;
 }
@@ -606,31 +605,38 @@ table{
 .card1-hor {
   display: flex;
   flex-direction: row;
-  width: 550px;
+  width: 630px;
+  height: 300px;
   margin-left: 30px;
   margin-top: 50px;
 }
 
 .card1-hor img:first-child {
-  width: 200px;
-  height: 220px;
+  width: 300px;
+  height: 280px;
   object-fit: cover;
   margin-bottom: 20px;
-
+  border-radius: 2px;
 }
 
 .card1-hor h3 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .txt-hor {
-  margin: 10px 0 0 10px;
+  font-size: 14.5px;
+  margin: 40px 0 0 12.5px;
+}
+
+.txt-hor p {
+  margin-top: 20px;
 }
 
 .creditos{
   display: flex;
   justify-content: flex-end;
+  margin-top: 14px
 }
 
 .salvar {
@@ -641,6 +647,136 @@ table{
 .salvar:hover {
   filter: invert(75%);
 }
+
+<<<<<<< HEAD
+=======
+/* FOOTER */
+footer{
+    background-color: #239b3b;
+    padding: 50px 35px 20px 35px;
+    margin-top: 7%;
+}
+.container-footer{
+    max-width: 1400px;
+    margin: auto;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footer-col ul{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li{
+    margin: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+}
+.container-footer .medias-socias{
+    margin-top: 30px;
+
+}
+.container-footer .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0 .5s ease;
+
+
+}
+.container-footer .medias-socias a i{
+    font-size: 20px;
+
+
+}
+.container-footer .medias-socias a:hover{
+    color : #0f4900ce;
+    background-color: white;
+
+}
+.footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #239b3b;
+}
+.footer-col .form-sub input::placeholder{
+    color: white;
+
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+    transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.footer-col .form-sub button:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+@media (max-width:800px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+
+    }
+}
+@media (max-width:600px){
+    .footer-col{
+        width: 100%;
+
+    }
+}
+>>>>>>> 2c2b2aee8d746828ef6ee38f919970dc9b47ba99
 
 /* TELA JOGOS */
 .container {
