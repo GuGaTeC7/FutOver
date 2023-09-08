@@ -380,9 +380,6 @@ main.cards {
   cursor: default;
 }
 
-.card:first-child {
-  margin-left: 0;
-}
 .card {
   margin-left: 30px !important;
 }
@@ -833,6 +830,8 @@ background-color: rgb(216, 216, 216);
   height: 40px;
 }
 
+
+/* ANIMAÇÕES */
 @keyframes seta {
   0%   {background-color: #4747470c;}
   100% {background-color: #47474741;}
@@ -843,4 +842,11 @@ background-color: rgb(216, 216, 216);
   0%   {border-color: rgba(0, 0, 0, 0.39);}
   50%  {border-color: rgba(0, 0, 0, 0.596);}
   100% {border-color: rgba(0, 0, 0, 0.733);}
+}
+
+/* RESPONSIVE SCREENS */
+@media (min-width: 1238px) {
+  .card {
+    width: 395px;
+  }
 }
