@@ -6,7 +6,7 @@
     <title>FutOver</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>  
     <!-- NavBar -->
@@ -84,6 +84,8 @@
           </div>
       </section>
 
+    <div class="layout-geral">
+      <div class="conteudo">
       <!-- CARDS NOTÍCIAS -->
       <main class="cards">
         <section class="card">
@@ -132,128 +134,365 @@
                 <time class="text-muted"><span style="color: white; font-size: 14.5px;">há 8 horas</span></time>
               </div>
             </div>
-            </section>  
-
-            <!-- TABELA CLASSIFICAÇÃO-->
-            <div class="element">
-              <table>
-            <h1 class="title-table"><span class="custom-font" style="font-size: 16px;">Rodada 21</span>
-              <span class=colored-text><br>Campeonato Brasileiro 2023</span></h1>
-              </div>
-            <table>
-              <tr>
-                <th colspan="2">Classificação</th>
-                <th> </th>
-                <th>P</th>
-                <th>ULT.JOGOS</th>
-              </tr>
-          
-                  <tr class="item">
-                    <td width="10" height="10px">1</td>
-                    <td height="39px"><img src="/img/botafogo.png.png" 
-                    width="24px" 
-                    height="24px"
-                    >  BOT</td>
-                    <td>0  <div class="square"></div> </td>
-                  <td>51</td>
-                  <td class="circle">
-                    <div class="circle-container">
-                      <div class="circle circle-green"></div>
-                      <div class="circle circle-gray"></div>
-                      <div class="circle circle-green"></div>
-                      <div class="circle circle-gray"></div>
-                      <div class="circle circle-green"></div>
-                  </td>
-                  </tr>
-              </tr>
-          
-                  <tr class="item">
-                    <td>2</td>
-                    <td height="39px"><img src="/img/palmeiras.png.png" 
-                    width="24px" 
-                    height="24px"  
-                    > PAL</td>
-                    <td>0  <div class="square"></div></td>
-                  <td>40</td>
-                  <td class="circle2">
-                    <div class="circle-container">
-                      <div class="circle circle-green"></div>
-                      <div class="circle circle-red"></div>
-                      <div class="circle circle-green"></div>
-                      <div class="circle circle-green"></div>
-                      <div class="circle circle-green"></div>   
-                  </td>
-              </tr>
-              <tr class="item">
-                <td>3</td>  
-                <td height="39px"><img src="/img/gremio.png.png"
-                    width="24px" 
-                    height="24px">  GRE</td>
-                    <td>2  <div class="arrow up"></div></td>
-                  <td>36</td>
-                  <td class="circle2">
-                    <div class="circle-container">
-                        <div class="circle circle-gray"></div>
-                        <div class="circle circle-red"></div>
-                        <div class="circle circle-green"></div>
-                        <div class="circle circle-red"></div>
-                        <div class="circle circle-green"></div>   
-                  </td>
-              </tr>
-              <tr >
-                  <tr class="item">
-                    <td>4</td>
-                    <td height="39px"><img src="/img/flamengo.png.png" 
-                      width="24px" 
-                      height="24px">  FLA</td>
-                      <td>1  </span><div class="arrow down"></div></td>
-                  <td>36</td>
-                  <td class="circle2">
-                    <div class="circle-container">
-                        <div class="circle circle-green"></div>
-                        <div class="circle circle-red"></div>
-                        <div class="circle circle-gray"></div>
-                        <div class="circle circle-green"></div>
-                        <div class="circle circle-gray"></div> 
-              </td>
-          
-              </tr>
-              <tr class="item">
-                <td style="border-bottom: none;">5</td>  
-                <td height="39px" style="border-bottom: none;"><img src="/img/fluminense.png.png" 
-                    width="24px" 
-                    height="24px" style="border-bottom: none;">  FLU</td>
-                    <td style="border-bottom: none;">1  <div class="arrow down"></div></td>
-                  <td style="border-bottom: none;">35</td>
-                  <td class="circle2" style="border-bottom: none;">
-                    <div class="circle-container">
-                        <div class="circle circle-green"></div>
-                        <div class="circle circle-green"></div>
-                        <div class="circle circle-red"></div>
-                        <div class="circle circle-green"></div>
-                        <div class="circle circle-gray"></div>
-                </tr>
-              </table>
-            </table>
+            </section> 
             </main>
+
+            <hr>
 
             <!-- CARD HORIZONTAL -->
             <section class="card-hor">
               <div class="card1-hor">
-                <img src="https://image-service.onefootball.com/transform?w=290&h=290&dpr=2&image=https%3A%2F%2Fstatic.gazetaesportiva.com%2Fuploads%2Fimagem%2F2023%2F09%2F01%2Fspfc.jpg" alt="">
-                <div class="txt-hor">
-                 <a href="#" style="color:black"><h3>CBF altera data de São Paulo x Coritiba e mantém Derby neste domingo</h3>
-                  <p><span style="text-decoration:inherit;">A Confederação Brasileira de Futebol alterou, nesta sexta-feira, a data da partida entre São Paulo e Coritiba, válida pela 22ª rodada do Campeonato Brasileiro. O embate passou para o dia... </span></p></a>
-                  <span>Fut<span style="color: rgb(36, 216, 0);">Over</span></span>
-                  ·
-                  <time class="text-muted"><span style="font-size: 15.5px;">há 8 horas</span></time>
-                  <div class="creditos">
-                    <a href="/view/tela-login.html"><img class="salvar" alt="" decoding="async" srcset="https://image-service.onefootball.com/transform?w=32&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 1x, https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 2x" src="https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg" width="24" height="24" data-nimg="1" loading="lazy" style="color: transparent; justify-content: end;"></a>
+                <a href="#"><img src="https://image-service.onefootball.com/transform?w=290&h=290&dpr=2&image=https%3A%2F%2Fstatic.gazetaesportiva.com%2Fuploads%2Fimagem%2F2023%2F09%2F01%2Fspfc.jpg" alt=""></a>
+                <div class="txt-hor" style="cursor: default;">
+                 <a href="#" style="color:black"><h3>CBF altera data de São Paulo x Coritiba e mantém Derby neste domingo</h3></a>
+                  <p><span style="cursor: default;">A Confederação Brasileira de Futebol alterou, nesta sexta-feira, a data da partida entre São Paulo e Coritiba, válida pela 22ª rodada do Campeonato Brasileiro. O embate passou para o dia... </span></p>
+                  <div class="alinha-credito">
+                    <div class="spanC">
+                      <span>Fut<span style="color: rgb(36, 216, 0);">Over</span></span>
+                      ·
+                      <time class="text-muted"><span style="font-size: 15.5px;">há 3 horas</span></time>
+                    </div>
+                    <div class="creditos">
+                      <a href="/view/tela-login.html" style="height: 20px;"><img class="salvar" alt="" decoding="async" srcset="https://image-service.onefootball.com/transform?w=32&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 1x, https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 2x" src="https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg" width="24" height="24" data-nimg="1" loading="lazy" style="color: transparent; justify-content: end;"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="card1-hor">
+                <a href="#"><img src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fwp-images.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F13%2F2023%2F09%2FFBL-EURO-2024-POR-TRAINING-1694437504-1000x750.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=290&q=25&w=290&s=05bf589334f1f3399b72ac7e3ac47956" alt=""></a>
+                <div class="txt-hor" style="cursor: default;">
+                 <a href="#" style="color:black"><h3>📋 Sem CR7, veja a provável escalação de Portugal contra Luxemburgo</h3></a>
+                  <p><span style="cursor: default;">Portugal recebe Luxemburgo, nesta segunda-feira (11), às 15h45 (de Brasília), no Estádio Algarve, em São João da Venda, pela sexta rodada do Grupo J das Eliminatórias da Eurocopa.
+                    Em março, atuando... </span></p>
+                  <div class="alinha-credito">
+                    <div class="spanC">
+                      <span>Fut<span style="color: rgb(36, 216, 0);">Over</span></span>
+                      ·
+                      <time class="text-muted"><span style="font-size: 15.5px;">há 8 horas</span></time>
+                    </div>
+                    <div class="creditos">
+                      <a href="/view/tela-login.html" style="height: 20px;"><img class="salvar" alt="" decoding="async" srcset="https://image-service.onefootball.com/transform?w=32&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 1x, https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 2x" src="https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg" width="24" height="24" data-nimg="1" loading="lazy" style="color: transparent; justify-content: end;"></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </section>
-            
+          </div>
+
+
+        <div class="tabelas">
+          <!-- TABELA CLASSIFICAÇÃO-->
+          <div class="element">
+            <table>
+          <h1 class="title-table"><span class="custom-font" style="font-size: 16px;">Rodada 21</span>
+            <span class=colored-text><br>Campeonato Brasileiro 2023</span></h1>
+            </div>
+          <table>
+            <tr>
+              <th colspan="2">Classificação</th>
+              <th> </th>
+              <th>P</th>
+              <th>ULT.JOGOS</th>
+            </tr>
+        
+                <tr class="item">
+                  <td width="10" height="10px">1</td>
+                  <td height="39px"><img src="/img/botafogo.png.png" 
+                  width="24px" 
+                  height="24px"
+                  >  BOT</td>
+                  <td>0  <div class="square"></div> </td>
+                <td>51</td>
+                <td class="circle">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                </td>
+                </tr>
+            </tr>
+        
+                <tr class="item">
+                  <td>2</td>
+                  <td height="39px"><img src="/img/palmeiras.png.png" 
+                  width="24px" 
+                  height="24px"  
+                  > PAL</td>
+                  <td>0  <div class="square"></div></td>
+                <td>40</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-red"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr class="item">
+              <td>3</td>  
+              <td height="39px"><img src="/img/gremio.png.png"
+                  width="24px" 
+                  height="24px">  GRE</td>
+                  <td>2  <div class="arrow up"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr >
+                <tr class="item">
+                  <td>4</td>
+                  <td height="39px"><img src="/img/flamengo.png.png" 
+                    width="24px" 
+                    height="24px">  FLA</td>
+                    <td>1  </span><div class="arrow down"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div> 
+            </td>
+        
+            </tr>
+            <tr class="item">
+              <td style="border-bottom: none;">5</td>  
+              <td height="39px" style="border-bottom: none;"><img src="/img/fluminense.png.png" 
+                  width="24px" 
+                  height="24px" style="border-bottom: none;">  FLU</td>
+                  <td style="border-bottom: none;">1  <div class="arrow down"></div></td>
+                <td style="border-bottom: none;">35</td>
+                <td class="circle2" style="border-bottom: none;">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div>
+              </tr>
+            </table>
+          </table>
+          </div>
+
+          <div class="element">
+            <table>
+          <h1 class="title-table"><span class="custom-font" style="font-size: 16px;">Rodada 21</span>
+            <span class=colored-text><br>Campeonato Brasileiro 2023</span></h1>
+            </div>
+          <table>
+            <tr>
+              <th colspan="2">Classificação</th>
+              <th> </th>
+              <th>P</th>
+              <th>ULT.JOGOS</th>
+            </tr>
+        
+                <tr class="item">
+                  <td width="10" height="10px">1</td>
+                  <td height="39px"><img src="/img/botafogo.png.png" 
+                  width="24px" 
+                  height="24px"
+                  >  BOT</td>
+                  <td>0  <div class="square"></div> </td>
+                <td>51</td>
+                <td class="circle">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                </td>
+                </tr>
+            </tr>
+        
+                <tr class="item">
+                  <td>2</td>
+                  <td height="39px"><img src="/img/palmeiras.png.png" 
+                  width="24px" 
+                  height="24px"  
+                  > PAL</td>
+                  <td>0  <div class="square"></div></td>
+                <td>40</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-red"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr class="item">
+              <td>3</td>  
+              <td height="39px"><img src="/img/gremio.png.png"
+                  width="24px" 
+                  height="24px">  GRE</td>
+                  <td>2  <div class="arrow up"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr >
+                <tr class="item">
+                  <td>4</td>
+                  <td height="39px"><img src="/img/flamengo.png.png" 
+                    width="24px" 
+                    height="24px">  FLA</td>
+                    <td>1  </span><div class="arrow down"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div> 
+            </td>
+        
+            </tr>
+            <tr class="item">
+              <td style="border-bottom: none;">5</td>  
+              <td height="39px" style="border-bottom: none;"><img src="/img/fluminense.png.png" 
+                  width="24px" 
+                  height="24px" style="border-bottom: none;">  FLU</td>
+                  <td style="border-bottom: none;">1  <div class="arrow down"></div></td>
+                <td style="border-bottom: none;">35</td>
+                <td class="circle2" style="border-bottom: none;">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div>
+              </tr>
+            </table>
+          </table>
+          </div>
+
+          <div class="element">
+            <table>
+          <h1 class="title-table"><span class="custom-font" style="font-size: 16px;">Rodada 21</span>
+            <span class=colored-text><br>Campeonato Brasileiro 2023</span></h1>
+            </div>
+          <table>
+            <tr>
+              <th colspan="2">Classificação</th>
+              <th> </th>
+              <th>P</th>
+              <th>ULT.JOGOS</th>
+            </tr>
+        
+                <tr class="item">
+                  <td width="10" height="10px">1</td>
+                  <td height="39px"><img src="/img/botafogo.png.png" 
+                  width="24px" 
+                  height="24px"
+                  >  BOT</td>
+                  <td>0  <div class="square"></div> </td>
+                <td>51</td>
+                <td class="circle">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                </td>
+                </tr>
+            </tr>
+        
+                <tr class="item">
+                  <td>2</td>
+                  <td height="39px"><img src="/img/palmeiras.png.png" 
+                  width="24px" 
+                  height="24px"  
+                  > PAL</td>
+                  <td>0  <div class="square"></div></td>
+                <td>40</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-red"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr class="item">
+              <td>3</td>  
+              <td height="39px"><img src="/img/gremio.png.png"
+                  width="24px" 
+                  height="24px">  GRE</td>
+                  <td>2  <div class="arrow up"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr >
+                <tr class="item">
+                  <td>4</td>
+                  <td height="39px"><img src="/img/flamengo.png.png" 
+                    width="24px" 
+                    height="24px">  FLA</td>
+                    <td>1  </span><div class="arrow down"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div> 
+            </td>
+        
+            </tr>
+            <tr class="item">
+              <td style="border-bottom: none;">5</td>  
+              <td height="39px" style="border-bottom: none;"><img src="/img/fluminense.png.png" 
+                  width="24px" 
+                  height="24px" style="border-bottom: none;">  FLU</td>
+                  <td style="border-bottom: none;">1  <div class="arrow down"></div></td>
+                <td style="border-bottom: none;">35</td>
+                <td class="circle2" style="border-bottom: none;">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div>
+              </tr>
+            </table>
+          </table>
+          </div>
+        
+        </div>
+      </div>
 
             <!-- FOOTER -->
             <footer>
@@ -292,7 +531,6 @@
                       <div class="footer-col">
                           <h4>Receba notícias atualizadas <strong style="white-space: nowrap;">24 horas!</strong></h4>
                           <div class="form-sub">
-                              <form>
                                   <input type="email" placeholder="Insira um email..." required>
                                   <button>ENVIAR</button>
                               </form>
@@ -312,6 +550,8 @@
               </footer>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

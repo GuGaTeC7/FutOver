@@ -5,14 +5,28 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
+  body {
+    background-color: #f9f9f9 !important;
+    cursor: default;
+  }
 
 nav {
-  background-image: linear-gradient(45deg, #242424 50%, #028f02 50%);
+  background-image: linear-gradient(45deg, #242424 50%, #239b3b 50%);
 }
 
 .logo {
   width: 60px;
   margin-right: 50px;
+}
+
+.layout-geral {
+  display: flex;
+  flex-direction: row;
+}
+
+hr {
+  margin-top: 2rem !important;
+  margin-left: 22px;
 }
 
 #nav1 {
@@ -418,6 +432,9 @@ main.cards {
 }
 
 /* TABELA CAMPEONATO */
+.tabelas {
+  margin: 30px 0 0 0;
+}
 
 table {
   border-collapse: collapse;
@@ -560,9 +577,14 @@ table{
   padding-bottom: 0px;
   padding-left: 24px;
   margin-left: 50px;
-  margin-top: 10px;
-  border: 1px solid gray;
-  box-shadow: 1px 1px 4px black;
+  margin-top: 50px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 7px;
+  background-color: #ffffff;
+}
+
+.element:first-child {
+  margin-top: 15px;
 }
 .arrow {
   display: inline-block;
@@ -602,7 +624,7 @@ table{
 .card1-hor {
   display: flex;
   flex-direction: row;
-  width: 630px;
+  width: 750px;
   height: 300px;
   margin-left: 30px;
   margin-top: 50px;
@@ -617,23 +639,31 @@ table{
 }
 
 .card1-hor h3 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .txt-hor {
-  font-size: 14.5px;
-  margin: 40px 0 0 12.5px;
+  font-size: 15px;
+  margin: 29px 0 0 12.5px;
 }
 
 .txt-hor p {
   margin-top: 20px;
 }
 
+.alinha-credito {
+  margin-top: 52px;
+}
+
+.spanC {
+  position: absolute;
+}
+
 .creditos{
   display: flex;
   justify-content: flex-end;
-  margin-top: 14px
+  padding-top: 25px;
 }
 
 .salvar {
@@ -845,8 +875,83 @@ background-color: rgb(216, 216, 216);
 }
 
 /* RESPONSIVE SCREENS */
-@media (min-width: 1238px) {
+/* @media screen and (min-width: 1318px) {
+  .card {
+    width: 595px;
+  }
+
+  .icon img {
+    max-width: 100%;
+    width: 450px;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+
+  .not-title span {
+    font-size: 15.5px;
+    justify-content: initial;
+    text-transform: uppercase;
+  }
+  
+  .not-title {
+    width: 200px;
+    padding-bottom: 2px;
+    margin: 11px 0px 0 0px;
+  }
+  
+}
+
+@media screen and (min-width: 1420px) {
+  .card {
+    width: 595px;
+  }
+
+  .icon img {
+    max-width: 100%;
+    width: 450px;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+
+  .not-title span {
+    font-size: 15.5px;
+    justify-content: initial;
+    text-transform: uppercase;
+  }
+  
+  .not-title {
+    width: 250px;
+    padding-bottom: 2px;
+    margin: 11px 0px 0 0px;
+  }
+  
+}
+
+@media screen and (min-width: 1900px) {
   .card {
     width: 395px;
   }
-}
+
+  .icon img {
+    max-width: 100%;
+    width: 750px;
+    height: 185px;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+
+  .not-title span {
+    font-size: 17.5px;
+    justify-content: initial;
+    text-transform: uppercase;
+  }
+  
+  .not-title {
+    width: 400px;
+    padding-bottom: 2px;
+    margin: 11px 0px 0 0px;
+  }
+  
+} */
