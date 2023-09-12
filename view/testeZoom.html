@@ -9,6 +9,7 @@
 .noticias-1 {
   width: 90%;
   margin: 0 0 0 85px;
+  display: flex;
 }
 
 .noticias-wraper-1 {
@@ -39,11 +40,14 @@
 .noticia-destaque-single img {
   width: 100%;
   height: 100%;
-  transition: .4s all;
+  display: block;
+  transition: 0.3s all linear;
+  left: 0;
+  top: 0;
 }
 
-.noticia-destaque-single>img:hover {
-  transform: scale(1.1);
+.noticia-destaque-single:hover img {
+  scale: 1.1;
 }
 
 .noticia-destaque-single h3 {
@@ -135,6 +139,49 @@
   width: 100%;
   background-color: rgb(0,0,0,0.6);
 }
+
+/*  */
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.col {
+}
+
+.card {
+  width: 500px;
+  border-radius: 3px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .zoom {
+  width: 100%;
+  display:  block;
+  transition: all 0.1s ease-in-out; 
+}
+
+.card:hover .zoom {
+  scale: 1.1;
+}
+
+.card h4 {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+
+
     </style>
 </head>
 <body>
@@ -162,5 +209,42 @@
             </div>
           </div>
       </section>
+
+      <hr>
+
+      <div class="container">
+        <div class="col">
+          <div class="card" style="width: 700px;">
+            <img class="zoom" src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fwp-images.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F13%2F2023%2F08%2FFBL-WC-2023-WOMEN-MATCH61-ESP-SWE-1692953417-1000x750.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=630&q=25&w=840&s=cf90fb0f040c65bc3b028f107265b4df'" alt="">
+            <h4>Título</h4>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img class="zoom" src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fwp-images.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F13%2F2023%2F08%2FFBL-WC-2023-WOMEN-MATCH61-ESP-SWE-1692953417-1000x750.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=630&q=25&w=840&s=cf90fb0f040c65bc3b028f107265b4df'" alt="">
+            <h4>Título</h4>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img class="zoom" src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fwp-images.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F13%2F2023%2F08%2FFBL-WC-2023-WOMEN-MATCH61-ESP-SWE-1692953417-1000x750.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=630&q=25&w=840&s=cf90fb0f040c65bc3b028f107265b4df'" alt="">
+            <h4>Título</h4>
+          </div>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="times" style="width: 244px; height: 329px; background-color: #686868;">
+        <div class="header-time" style="display: flex; justify-content: center;">
+          <label for="#" style="border: 1px solid; margin-top: 12px; width: 70px; justify-content: center; display: flex; padding: 2px;">Série A</label>
+          <label for="#" style="border: 1px solid; margin-top: 12px; width: 70px; justify-content: center; display: flex; padding: 2px;">Série B</label>
+          <label for="#" style="border: 1px solid; margin-top: 12px; width: 70px; justify-content: center; display: flex; padding: 2px;">Europa</label>
+        </div>
+      </div>
+    
 </body>
 </html>
