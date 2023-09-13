@@ -174,34 +174,53 @@
 
   /* MODAL TIMES */
   .times {
-    width: 244px; 
-    height: 329px; 
+    width: 264px; 
+    height: 385px; 
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.514);
     border-radius: 4px;
+    margin-left: 12px;
+    margin-top: 42px;
   }
 
   .header-time {
-    display: flex; justify-content: center;
+    display: flex; 
+    justify-content: center;
   }
 
   .L-time {
     border: 1px solid rgba(0, 0, 0, 0.514);
     margin-top: 12px; 
-    width: 70px; 
+    width: 78px; 
     justify-content: center; 
     display: flex; 
     padding: 2px;
     border-radius: 1px;
-    font-weight: 900;
-    color: #222222da;
+    font-weight: bold;
+    color: #222222;
     text-transform: uppercase;
   }
 
   .times-grid {
     display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
   }
 
   .times-grid img {
-    width: 55px;
+    width: 50px;
+    margin-top: 5px;
+  }
+
+  #triangulo-para-cima {
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #5386E4;
+    position: absolute;
+    top: 2%;
+    left: 2%;
   }
