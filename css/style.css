@@ -194,8 +194,8 @@ border-color: rgb(255, 255, 255);
 }
 
 .icon-times img {
-  width: 95%;
-  
+  width: 90%;
+  object-fit: cover;
 }
 
 #triangulo-para-cima {
