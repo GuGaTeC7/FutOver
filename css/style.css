@@ -10,6 +10,8 @@
     cursor: default;
   }
 
+/* NAVBAR */
+
 nav {
   background-image: linear-gradient(45deg, #242424 50%, #239b3b 50%);
 }
@@ -151,6 +153,66 @@ border-color: rgb(255, 255, 255);
   margin: 0 0 15px 20px;
   color: rgba(0,0,0,.8);
   font-size: 28px;
+}
+
+/* MODAL TIMES */
+.times {
+  width: 264px; 
+  height: 395px; 
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+  border-radius: 4.5px;
+  margin-left: 6%;
+  position: absolute;
+  z-index: 2;
+}
+
+.header-time {
+  display: flex; 
+  justify-content: center;
+}
+
+.L-time {
+  border: 1px solid rgba(0,0,0,.1);
+  margin-top: 20px; 
+  width: 78px; 
+  justify-content: center; 
+  display: flex; 
+  padding: 2px;
+  border-radius: 2px;
+  font-weight: 750;
+  color: rgba(0, 0, 0, 0.514);
+  text-transform: uppercase;
+}
+
+.times-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-times img {
+  width: 95%;
+  
+}
+
+#triangulo-para-cima {
+  width: 0; 
+  height: 0; 
+  border-left: 18px solid;
+  border-right: 18px solid;
+  border-bottom: 18px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 7.1%;
+  left: 7.3%;
+}
+
+.icon-times {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
 }
 
 /* ASSINATURA */
