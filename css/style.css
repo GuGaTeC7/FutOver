@@ -10,152 +10,11 @@
     cursor: default;
   }
 
-/* NAVBAR */
-
-nav {
-  background-image: linear-gradient(45deg, #242424 50%, #239b3b 50%);
-}
-
-.logo {
-  width: 60px;
-  margin-right: 50px;
-}
-
-.layout-geral {
-  display: flex;
-  flex-direction: row;
-}
-
-hr {
-  margin-top: 2rem !important;
-  margin-left: 22px;
-}
-
-#nav1 {
-  color: rgb(255, 255, 255);
-  display: flex;
-  font-weight: 700;
-	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  font-size: 17.5px;
-  margin-top: 6px;
-  margin-left: 4px;
-}
-
-#nav1:hover {
-  color: #028f02;
-  border-width: 3px !important; 
-  border-color: #ffffff;
-}
-
-#navbarSupportedContent {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-}
-
-#btnLogin {
-  height: 50px;
-  margin-right: 5px;
-  text-align: right;
-  border-width: 2px; 
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  font-weight: 700;
-}
-
-#btnLogin:hover {
-  border-color: rgb(0, 0, 0); 
-
-}
-
-#btnCadastro {
-  text-align: right;
-  border-width: 2px; 
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  font-weight: 650;
-
-}
-
-#btnCadastro:hover {
-border-color: rgb(255, 255, 255); 
-}
-
-.form-controlC {
-  display: flex;
-  justify-content: center;
-  width: 320px;
-  margin: 0 100px 0 0;
-}
-
-.form-controlC:hover {
-  border-color: rgb(36, 216, 0);
-}
-
-
-.imgPesq {
-  margin: 2px 3px 0 0;
-}
-
-
-/* SEARCH BAR */   
-  .box{
-    width: 10px;
-    height: 50px;
-  }
-  
-  .container-2{
-    width: 20px;
-    vertical-align: middle;
-    white-space:nowrap;
-    position:relative;
-  }
-  
-  .container-2 input#search{
-    width: 10px;
-    height: 40px;
-    background: #ffffff;
-    border:none;
-    font-size: 10pt;
-    float: left;
-    color: #262626;
-    padding-left: 35px;
-    border-radius: 5px;
-    color: #000000;
-    transition: width .55s ease;
-    margin-top: 6px;
-  }
-
-  
-  .container-2 .icon{
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 14px;
-    z-index: 1;
-    color: #000000;
-  }
-
-
-  .container-2 input#search:focus, .container-2 input#search:active{
-    outline:none;
-    width: 250px;
-  }
-  
-  .container-2:hover input#search{
-    width: 250px;
-  }
-  
-  .container-2:hover .icon{
-    color: #000000;
-  }
-
-.topN {
-  margin: 0 0 15px 20px;
-  color: rgba(0,0,0,.8);
-  font-size: 28px;
-}
-
 /* MODAL TIMES */
+.timesCompleto {
+  display: none;
+}
+
 .times {
   width: 264px; 
   height: 395px; 
@@ -179,7 +38,7 @@ border-color: rgb(255, 255, 255);
   justify-content: center; 
   display: flex; 
   padding: 2px;
-  border-radius: 2px;
+  border-radius: 3px;
   font-weight: 750;
   color: rgba(0, 0, 0, 0.514);
   text-transform: uppercase;
@@ -205,13 +64,12 @@ border-color: rgb(255, 255, 255);
   border-right: 18px solid;
   border-bottom: 18px solid rgb(255, 255, 255);
   position: absolute;
-  top: 7.1%;
-  left: 7.3%;
+  top: 10.5%;
+  left: 8.1%;
 }
 
 .icon-times {
-  width: 50px;
-  height: 50px;
+  width: 49px;
   margin-top: 5px;
 }
 
