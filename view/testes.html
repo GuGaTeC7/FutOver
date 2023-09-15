@@ -8,6 +8,93 @@
 
 </head>
 <body>
+
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg"  id="navP">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" id="nav1" href="#">Jogos</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" id="escudo" style="color: rgb(255, 255, 255);display: flex;font-weight: 700;text-shadow: 0 1px 3px rgba(0,0,0,0.6);font-size: 17.5px;margin-top: 6px;margin-left: 4px;" href="#">Times</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav1" href="#">Competições</a>
+          </li>
+          <form class="form-inline my-2 my-lg-0">
+            <li>
+              <div class="box">
+                <div class="container-2"><span class="icon"><i class="fa fa-search"></i></span>
+                  <input id="search" type="search" placeholder="Pesquisar..."/>
+                </div>
+              </div>  
+            </li>
+          </ul>
+          </form> 
+          
+          <a class="navbar-brand" href="/view/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAkFBMVEXh/1caGhoAABTm/1kAAA8AABbV8FTp/1oYGBrM41AAABLs/1sXFhkVFBkUEhkRDxgJAxdqdzANCRgrLx43PCHG3E4AAAhRWimitUIkKBsyNx+arT/f+Vaqv0UtMh6JmDm3zUlIUSZ4hjWNnzsdHhlcZyxkby5xfTI/RiMgIxuAkDa/1UyxxkeUpj1XYCo6QSJ6s4lJAAAFA0lEQVRoge1a25aqOhCEtEmEcPG6Rx0YFUfHEd3+/98dQMcBU+heAZ8O9QhrddGVpG/Bsjp06NChQ4cOHRAEwoPnbeFPT8OfJVEKnvc+ZVusNGO2hp6wZML15+ydWuN9CzXz4Zu0xMLXnvd9pzXaqQvciomOQIbRW3syb0e6W4wstRuA75m1JTN0a/ClLDH3tOfevLXtLBYBcGuKd9tg15bMNATmw7Wy1F9dfpsdW5JZnQCtzWOyRNDXnvsfLcms3sFetoMJWfQOPoh/tSNzRqs7VRwiS03AsrtpKzLLA0O04T575wB3g33UBqvYorW9uCs3KEYemrtL1uwbmLbzkJRZV2M9RmanqykvRcc1A5YL69ki0rQHZF43oSWSJE5rV88FF/CE8pVHMm+MeB1hRZEVTWfJmrE6VtsvIiF96jHSdo0Orxr3XD5gPZcNaklz49mmsmgFjnX4ZuIuOfmKoWNTVbmIDJSgVGSU8QmtmIbgo7AdhUhmo8NL85rtW4bnOjkvxUDmkVEqohQFYs2lY2GbhigVxUYyoxrtDn12urgkQn0f9JkBa7ZioHjQLC8vtDjjD5WJu8enMt9oYcFlc6OMT0NwMCrw2OZn3zgjXWbPNopV4vPJyQ14/EMrUQnCE6PdPHsiM587v3bXIJ7xlZHMaMVKzvYSeTNLKdj5wdksJYCDcYPPFquSiFkRAtxdmsgMV+zGOj9RxZkJ6oqmJu4SWrHC3shdbESFlVZA5tAo49MUyuyFzP8bizsB1RdsPo1kXt7L7Pkjxufrd4c0PyKQPzzbrPk8M8Y4HxTgnLGBPf67OQoFnKAjcHe0NdrN0XQVzzaHZJjh67CZxakgJbGpdptPyoo5KVUOKUkXt/SNoJL3PtucpeAPxKmotR6/DgqdOLet5rMeAsRxf9xGV/QQuPlMXu6u3L+u+XwEB3RF/sfLaWkJggZfvp73DGrsnvNqXji4C84vP7yw+eSnl8scfSCZXx8jYfO5L5frJPMAr+qSiiEvqrF5KRVJkZ52+wy7TRq1t+pirLcy/dFNZukkkyx1h0EQDBifJE5LzLj53F5lpijhvLT8AR8lohW1JeyKrs0npeP7xNzn87QNlx0wSvG+L6lIzlwQuP3erDmxfNB81owxs0NmVGdWeeu7IhnX0GbEjUsCx9dtB5NCZuHVjkayCrcZsdygjH/IZVTbB70z3zXkReNmnhYztPrmKgMzalB/QCnwKVznMsN7hl8Y1vQ/7sI5aNF8iofu2l6/yQUafYPmc5BbhKVe5esaXBjCNbzMQeXuoczNrpTUF+qKiimaAkpU4JuNIApIkBL6rEhFCpSYFXhj48qAYnTzeT2ZT3m/jTcWXEM3/kfeT2PeCLjrBddU9JTX+Iq0pvm8uKv4k0mfvzB1l7ao+bzGPwUu4SswvwFHzafnX08HoYuzMpjRSC23jKZqg585KGwiyuCm7SL6naHUfKoPkKl+EezNWC1yoMy3ch3uutIHmtZYuCsqLRqdH+ys0PhqNkI9PivFgixp1B8l47RPKUpF53JXpM8Zf1U2bsrhTzj8VFk0+M9D4e3QOBfBn3DCu5AbDaHUDWhxxl/f3xXRQb+5DZtcu//rHFSuFtX7cZ9NjiY3WVeIvsvu4fogwxDNvl1+GaD3Q+6O3x+NV58ichCgRVLpcj3Ifznj62WqXj72KDHLjE0Iq3Z63aFDhw4dOnT4P+E/c7ZN3fwnpjwAAAAASUVORK5CYII=" alt="logo" class="logo"></a>
+          
+        
+        <form class="form-inline">
+          <button class="btn" id="btnLogin" id="btnLogin" type="button"><a href="/view/tela-login.html" style="color: inherit; text-decoration: none;">Login</a></button>
+          <button class="btn" id="btnCadastro" type="button"><a href="/view/tela_cadastro.html" style="color: inherit; text-decoration: none;">Cadastre-se</a></button>
+        </form>
+        
+      </div>
+    </nav>
+    
+    <div class="timesCompleto">
+    <div id="triangulo-para-cima"></div>
+        <div class="times">
+          <div class="header-time">
+            <label for="#" class="L-time" style="border-bottom-color: green; color: rgb(24, 139, 24);">Série A</label>
+            <label for="#" class="L-time" style="border-left: none; border-radius: inherit;">Série B</label>
+            <label for="#" class="L-time" style="border-left: none;">Europa</label>
+          </div>
+
+          <div class="times-grid">
+            <!-- Linha 1 -->
+            <div class="icon-times"><img src="https://seeklogo.com/images/A/america-mineiro-logo-1AAEF3C345-seeklogo.com.png"/></div>
+            <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2018/12/athletico-paranaense-logo-escudo-1.png" /></div>
+            <div class="icon-times"><img style="width: 40px;" src="https://logodownload.org/wp-content/uploads/2016/10/atletico-mineiro-logo-escudo-6.png" /></div>
+            <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2017/02/e-c-bahia-logo-escudo-1.png" /></div>
+
+            <!-- Linha 2 -->
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+
+            <!-- Linha 3 -->
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+
+            <!-- Linha 4 -->
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+
+            <!-- Linha 5 -->
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+          </div>
+        </div>
+
+    </div>
+
+
+        <hr>
+
     <section class="noticias-1">
         <div class="center">
           <div class="noticias-wraper-1" >
@@ -61,20 +148,11 @@
 
       <hr>
 
-        <div class="times">
-          <div class="header-time">
-            <label for="#" class="L-time">Série A</label>
-            <label for="#" class="L-time" style="border-left: none;">Série B</label>
-            <label for="#" class="L-time" style="border-left: none;">Europa</label>
-          </div>
-
-          <div class="times-grid">
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-          </div>
-        </div>
         
+    <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
