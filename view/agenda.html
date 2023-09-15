@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Agenda do dia </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     .container {
       margin: 0 auto;
@@ -19,17 +21,16 @@
     }
 
     .teams img {
-      height: 30px;
+      height: 15px;
       margin-right: 10px;
     }
 
     .botao-colorido {
-      background-color: rgb(245, 245, 245);
-      color: green;
-      padding: 5px 5px;
-      border-radius: 7px;
-      cursor: pointer;
-      border-color: green;
+      display: flex;
+      justify-content: center;
+      place-items: center;
+      
+     color: #127315;
     }
 
     .cor-texto {
@@ -37,6 +38,7 @@
       left: 0;
       color: #127315;
       z-index: 1;
+      font-size: 25%;
     }
 
     code {
@@ -48,45 +50,101 @@
 
     }
 
-    body,
-    h1,
-    h2,
-    {
+    body,h1,h2,{
     margin: 3px;
     padding: 10px 20px;
     font-weight: normal;
     }
 
     b {
-      font-size: 25px;
+      font-size: 15px;
     }
+
+    .seta {
+      width: 5px;
+      height: 5px;
+    }
+
+    a {
+      color: green;
+      text-decoration: none;
+    }
+
+
+    .mais-jogos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #127315;
+      font-size: 15px;
+    }
+    
   </style>
 
 </head>
 
 <body>
- <div class="container">
-    <h2> <span class="cor-texto"><b>Eliminatoria da Copa - América do Sul </b></span></h2>
-    <div class="info">
-<tr>
-    <p>Rodada 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoje 20:00
-      <button class="botao-colorido">FIQUE
-      POR DENTRO</button>
+  <code>
+    <h1>Agenda do dia</h1>
+    <div class="container">
+      <h2> <span class="cor-texto"><b>Eliminatoria da Copa - América do Sul </b></span></h2>
+    <tr>
+      <p>Rodada 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08/09 20:00
       </p>
-    </div>
+      </div>
+    
+      <h2><div class="teams">
+        <img src="css\Uruguai.png">
+        <b>Uruguai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</b>
+      </div>
+      <div class="teams">
+        <img src="css\Chile.png">
+        <b>Chile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 <br><br><button class="botao-colorido">Melhores momentos</button></b><br>
 
-    <h2><div class="teams">
-      <img src="css\Uruguai.png">
-      <b>Uruguai</b></p>
-    </div>
-    <div class="teams">
-      <img src="css\Chile.png">
-      <b>Chile</b></p>
-    </div>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="botao-colorido">📺Onde assitir?</button>
     </h2>
-    </div>
+  </div>
 </tr>
+  <div class="container">
+  <h2> <span class="cor-texto"><b>Eliminatoria da Eurocopa</b></span></h2>
+<tr>
+  <p>Rodada 6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11/09 15:45
+  </p>
+  </div>
+
+  <h2><div class="teams">
+    <img src="css\portugal1.png">
+    <b>Portugal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</b>
+  </div>
+  <div class="teams">
+    <img src="css\Luxemburgo.png">
+    <b>Luxemburgo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 <br><br><button class="botao-colorido">Melhores momentos</button></b><br>
+
+ </h2>
+</tr>
+
+  <tr>
+    <div class="container">
+      <h2> <span class="cor-texto"><b>Eliminatoria da Copa - América do Sul</b></span></h2>
+    <tr>
+      <p>Rodada 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoje 23:00
+      </p>
+      </div>
+    
+      <h2><div class="teams">
+        <img src="css\Brasil.png">
+        <b>Brasil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</b>
+      </div>
+      <div class="teams">
+        <img src="css\Peru.png">
+        <b>Peru&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 <br><br><button class="botao-colorido">Onde assistir</button></b><br>
+
+      </div>
+
+<a href="#">
+  <div class="mais-jogos">
+  <h2>Mais jogos <img style="margin-left: 10px;" width="30" height="25" src="c:\Users\55119\Downloads\icons8-arrow-30.png"/></h2>
+</a> 
+</div>
 </code>
 </body>
 
