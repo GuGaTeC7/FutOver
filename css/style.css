@@ -233,6 +233,9 @@ body {
   z-index: 2;
 }
 
+.times-grid-E>.icon-times img {
+  width: 95%;
+}
 
 .icon-times img {
   width: 100%;
@@ -243,26 +246,6 @@ body {
   margin-top: 5px;
 }
 
-.imagem-com-tooltip {
-  position: relative;
-}
-
-.imagem-com-tooltip:hover::before {
-  content: attr(alt);
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  opacity: 1;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-
 #triangulo-para-cima {
   width: 0;
   height: 0;
@@ -270,8 +253,9 @@ body {
   border-right: 18px solid;
   border-bottom: 18px solid rgb(255, 255, 255);
   position: absolute;
-  top: 10.5%;
-  left: 8.1%;
+  top: 7.6%;
+  left: 8.7%;
+  background-color: #f50000;
 }
 
 /* ASSINATURA */
