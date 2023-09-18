@@ -42,20 +42,38 @@
   font-weight: 750;
   color: rgba(0, 0, 0, 0.514);
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.times-grid {
+.times-grid-A {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 50px 50px 50px 50px;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.times-grid-B {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-left: 10px;
+  position: absolute;
 }
 
 .icon-times img {
-  width: 90%;
-  object-fit: cover;
+  width: 100%;
 }
+
+.icon-times {
+  width: 35px;
+  margin-top: 5px;
+}
+
 
 #triangulo-para-cima {
   width: 0; 
@@ -66,11 +84,6 @@
   position: absolute;
   top: 10.5%;
   left: 8.1%;
-}
-
-.icon-times {
-  width: 49px;
-  margin-top: 5px;
 }
 
 /* ASSINATURA */

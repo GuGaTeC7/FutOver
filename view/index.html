@@ -55,44 +55,80 @@
         <div id="triangulo-para-cima"></div>
             <div class="times">
               <div class="header-time">
-                <label for="#" class="L-time" style="border-bottom-color: green; color: rgb(24, 139, 24);">Série A</label>
-                <label for="#" class="L-time" style="border-left: none; border-radius: inherit;">Série B</label>
-                <label for="#" class="L-time" style="border-left: none;">Europa</label>
+                <label for="#" class="L-time" id="serieAButton" onclick="mudaCorA()" style="border-bottom-color: green; color: rgb(24, 139, 24);">Série A</label>
+                <label for="#" class="L-time" id="serieBButton" onclick="mudaCorB()" style="border-left: none; border-radius: inherit;">Série B</label>
+                <label for="#" class="L-time" id="europaButton" onclick="mudaCorE()" style="border-left: none;">Europa</label>
               </div>
-    
-              <div class="times-grid">
+
+              <!-- SÉRIE A -->
+              <div class="times-grid-A">
                 <!-- Linha 1 -->
-                <div class="icon-times"><img src="https://seeklogo.com/images/A/america-mineiro-logo-1AAEF3C345-seeklogo.com.png"/></div>
-                <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2018/12/athletico-paranaense-logo-escudo-1.png" /></div>
-                <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2016/10/atletico-mineiro-logo-escudo-6.png" /></div>
-                <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2017/02/e-c-bahia-logo-escudo-1.png" /></div>
+                <div class="icon-times"><img src="/assets/america-mineiro-logo-1AAEF3C345-seeklogo.com.png"/></div>
+                <div class="icon-times"><img src="/assets/athletico-paranaense-logo-escudo-1.png" /></div>
+                <div class="icon-times"><img src="/assets/atletico-mineiro-logo-escudo-6.png" /></div>
+                <div class="icon-times"><img src="/assets/e-c-bahia-logo-escudo-1.png" /></div>
                 
                 <!-- Linha 2 -->
-                <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2016/11/botafogo-logo-escudo.png" /></div>
-                <div class="icon-times"><img src="https://www.pngall.com/wp-content/uploads/13/Red-Bull-PNG-Pic.png" /></div>
-                <div class="icon-times"><img src="https://upload.wikimedia.org/wikipedia/pt/e/e4/Novo_escudo_da_Associa%C3%A7%C3%A3o_Chapecoense_de_Futebol.png" /></div>
-                <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2017/02/cruzeiro-logo-escudo-.png" /></div>
+                <div class="icon-times"><img src="/assets/botafogo-logo-escudo.png" /></div>
+                <div class="icon-times"><img src="/assets/Red-Bull-PNG-Pic.png" /></div>
+                <div class="icon-times"><img src="/assets/logo-corinthians-512.png" /></div>
+                <div class="icon-times"><img style="object-fit: cover;" src="/assets/Novo_escudo_da_Associação_Chapecoense_de_Futebol.png" /></div>
     
                 <!-- Linha 3 -->
-                <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2017/02/cruzeiro-logo-escudo-.png" /></div>
-                <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2019/04/cuiaba-logo-escudo-1.png" /></div>
-                <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2016/09/flamengo-logo-escudo-novo.png" /></div>
-                <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2016/09/fluminense-logo-0.png" /></div>
+                <div class="icon-times"><img src="/assets/cruzeiro-logo-escudo-.png" /></div>
+                <div class="icon-times"><img src="/assets/cuiaba-logo-escudo-1.png" /></div>
+                <div class="icon-times"><img src="/assets/flamengo.png.png" /></div>
+                <div class="icon-times"><img src="/assets/fluminense.png.png" /></div>
     
                 <!-- Linha 4 -->
-                <div class="icon-times"><img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" /></div>
-                <div class="icon-times"><img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" /></div>
-                <div class="icon-times"><img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" /></div>
-                <div class="icon-times"><img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" /></div>
+                <div class="icon-times"><img src="/assets/fortaleza-ec-logo-escudo-4.png" /></div>
+                <div class="icon-times"><img src="/assets/goias-logo-0-1.png" /></div>
+                <div class="icon-times"><img src="/assets/gremio.png.png" /></div>
+                <div class="icon-times"><img src="/assets/internacional-logo-0.png" /></div>
     
                 <!-- Linha 5 -->
-                <div class="icon-times"><img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" /></div>
-                <div class="icon-times"><img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" /></div>
-                <div class="icon-times"><img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" /></div>
-                <div class="icon-times"><img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" /></div>
+                <div class="icon-times"><img src="/assets/palmeiras-logo-4.png" /></div>
+                <div class="icon-times"><img src="/assets/Santos_Logo.png" /></div>
+                <div class="icon-times"><img src="/assets/sao-paulo-futebol-clube-logo-C5FC046703-seeklogo.com.png" /></div>
+                <div class="icon-times"><img src="/assets/vasco-logo-1.png" /></div>
               
               </div>
             </div>
+
+            <!-- SÉRIE B -->
+            <div class="times-grid-B">
+              <!-- Linha 1 -->
+              <div class="icon-times"><img src="/assets/america-mineiro-logo-1AAEF3C345-seeklogo.com.png"/></div>
+              <div class="icon-times"><img src="/assets/atletico-mineiro-logo-escudo-6.png" /></div>
+              <div class="icon-times"><img src="/assets/athletico-paranaense-logo-escudo-1.png" /></div>
+              <div class="icon-times"><img src="/assets/e-c-bahia-logo-escudo-1.png" /></div>
+              
+              <!-- Linha 2 -->
+              <div class="icon-times"><img src="/assets/botafogo-logo-escudo.png" /></div>
+              <div class="icon-times"><img src="/assets/logo-corinthians-512.png" /></div>
+              <div class="icon-times"><img src="/assets/Red-Bull-PNG-Pic.png" /></div>
+              <div class="icon-times"><img style="object-fit: cover;" src="/assets/Novo_escudo_da_Associação_Chapecoense_de_Futebol.png" /></div>
+  
+              <!-- Linha 3 -->
+              <div class="icon-times"><img src="/assets/cuiaba-logo-escudo-1.png" /></div>
+              <div class="icon-times"><img src="/assets/cruzeiro-logo-escudo-.png" /></div>
+              <div class="icon-times"><img src="/assets/fluminense.png.png" /></div>
+              <div class="icon-times"><img src="/assets/flamengo.png.png" /></div>
+  
+              <!-- Linha 4 -->
+              <div class="icon-times"><img src="/assets/goias-logo-0-1.png" /></div>
+              <div class="icon-times"><img src="/assets/fortaleza-ec-logo-escudo-4.png" /></div>
+              <div class="icon-times"><img src="/assets/internacional-logo-0.png" /></div>
+              <div class="icon-times"><img src="/assets/gremio.png.png" /></div>
+  
+              <!-- Linha 5 -->
+              <div class="icon-times"><img src="/assets/Santos_Logo.png" /></div>
+              <div class="icon-times"><img src="/assets/palmeiras-logo-4.png" /></div>
+              <div class="icon-times"><img src="/assets/vasco-logo-1.png" /></div>
+              <div class="icon-times"><img src="/assets/sao-paulo-futebol-clube-logo-C5FC046703-seeklogo.com.png" /></div>
+            
+            </div>
+          </div>
     
         </div>
 
