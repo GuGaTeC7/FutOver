@@ -3,99 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTES / IMPLEMENTAÇÕES</title>
-    <link rel="stylesheet" href="/css/testes.css">
-
+    <title>FutOver</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
-<body>
-
-  <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg"  id="navP">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" id="nav1" href="#">Jogos</a>
-        </li>
-          <li class="nav-item">
-            <a class="nav-link" id="escudo" style="color: rgb(255, 255, 255);display: flex;font-weight: 700;text-shadow: 0 1px 3px rgba(0,0,0,0.6);font-size: 17.5px;margin-top: 6px;margin-left: 4px;" href="#">Times</a>
+<body>  
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg"  id="navP">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" id="nav1" href="#">Jogos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="nav1" href="#">Competições</a>
-          </li>
-          <form class="form-inline my-2 my-lg-0">
-            <li>
-              <div class="box">
-                <div class="container-2"><span class="icon"><i class="fa fa-search"></i></span>
-                  <input id="search" type="search" placeholder="Pesquisar..."/>
-                </div>
-              </div>  
-            </li>
-          </ul>
-          </form> 
-          
-          <a class="navbar-brand" href="/view/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAkFBMVEXh/1caGhoAABTm/1kAAA8AABbV8FTp/1oYGBrM41AAABLs/1sXFhkVFBkUEhkRDxgJAxdqdzANCRgrLx43PCHG3E4AAAhRWimitUIkKBsyNx+arT/f+Vaqv0UtMh6JmDm3zUlIUSZ4hjWNnzsdHhlcZyxkby5xfTI/RiMgIxuAkDa/1UyxxkeUpj1XYCo6QSJ6s4lJAAAFA0lEQVRoge1a25aqOhCEtEmEcPG6Rx0YFUfHEd3+/98dQMcBU+heAZ8O9QhrddGVpG/Bsjp06NChQ4cOHRAEwoPnbeFPT8OfJVEKnvc+ZVusNGO2hp6wZML15+ydWuN9CzXz4Zu0xMLXnvd9pzXaqQvciomOQIbRW3syb0e6W4wstRuA75m1JTN0a/ClLDH3tOfevLXtLBYBcGuKd9tg15bMNATmw7Wy1F9dfpsdW5JZnQCtzWOyRNDXnvsfLcms3sFetoMJWfQOPoh/tSNzRqs7VRwiS03AsrtpKzLLA0O04T575wB3g33UBqvYorW9uCs3KEYemrtL1uwbmLbzkJRZV2M9RmanqykvRcc1A5YL69ki0rQHZF43oSWSJE5rV88FF/CE8pVHMm+MeB1hRZEVTWfJmrE6VtsvIiF96jHSdo0Orxr3XD5gPZcNaklz49mmsmgFjnX4ZuIuOfmKoWNTVbmIDJSgVGSU8QmtmIbgo7AdhUhmo8NL85rtW4bnOjkvxUDmkVEqohQFYs2lY2GbhigVxUYyoxrtDn12urgkQn0f9JkBa7ZioHjQLC8vtDjjD5WJu8enMt9oYcFlc6OMT0NwMCrw2OZn3zgjXWbPNopV4vPJyQ14/EMrUQnCE6PdPHsiM587v3bXIJ7xlZHMaMVKzvYSeTNLKdj5wdksJYCDcYPPFquSiFkRAtxdmsgMV+zGOj9RxZkJ6oqmJu4SWrHC3shdbESFlVZA5tAo49MUyuyFzP8bizsB1RdsPo1kXt7L7Pkjxufrd4c0PyKQPzzbrPk8M8Y4HxTgnLGBPf67OQoFnKAjcHe0NdrN0XQVzzaHZJjh67CZxakgJbGpdptPyoo5KVUOKUkXt/SNoJL3PtucpeAPxKmotR6/DgqdOLet5rMeAsRxf9xGV/QQuPlMXu6u3L+u+XwEB3RF/sfLaWkJggZfvp73DGrsnvNqXji4C84vP7yw+eSnl8scfSCZXx8jYfO5L5frJPMAr+qSiiEvqrF5KRVJkZ52+wy7TRq1t+pirLcy/dFNZukkkyx1h0EQDBifJE5LzLj53F5lpijhvLT8AR8lohW1JeyKrs0npeP7xNzn87QNlx0wSvG+L6lIzlwQuP3erDmxfNB81owxs0NmVGdWeeu7IhnX0GbEjUsCx9dtB5NCZuHVjkayCrcZsdygjH/IZVTbB70z3zXkReNmnhYztPrmKgMzalB/QCnwKVznMsN7hl8Y1vQ/7sI5aNF8iofu2l6/yQUafYPmc5BbhKVe5esaXBjCNbzMQeXuoczNrpTUF+qKiimaAkpU4JuNIApIkBL6rEhFCpSYFXhj48qAYnTzeT2ZT3m/jTcWXEM3/kfeT2PeCLjrBddU9JTX+Iq0pvm8uKv4k0mfvzB1l7ao+bzGPwUu4SswvwFHzafnX08HoYuzMpjRSC23jKZqg585KGwiyuCm7SL6naHUfKoPkKl+EezNWC1yoMy3ch3uutIHmtZYuCsqLRqdH+ys0PhqNkI9PivFgixp1B8l47RPKUpF53JXpM8Zf1U2bsrhTzj8VFk0+M9D4e3QOBfBn3DCu5AbDaHUDWhxxl/f3xXRQb+5DZtcu//rHFSuFtX7cZ9NjiY3WVeIvsvu4fogwxDNvl1+GaD3Q+6O3x+NV58ichCgRVLpcj3Ifznj62WqXj72KDHLjE0Iq3Z63aFDhw4dOnT4P+E/c7ZN3fwnpjwAAAAASUVORK5CYII=" alt="logo" class="logo"></a>
-          
-        
-        <form class="form-inline">
-          <button class="btn" id="btnLogin" id="btnLogin" type="button"><a href="/view/tela-login.html" style="color: inherit; text-decoration: none;">Login</a></button>
-          <button class="btn" id="btnCadastro" type="button"><a href="/view/tela_cadastro.html" style="color: inherit; text-decoration: none;">Cadastre-se</a></button>
-        </form>
-        
-      </div>
-    </nav>
+            <li class="nav-item">
+              <a class="nav-link" id="escudo" href="#">Times</a>
+
+      <!-- MODAL TIMES -->
+      <div class="timesCompleto">
+        <div id="triangulo-para-cima"></div>
+            <div class="times">
+              <div class="header-time">
+                <label for="#" class="L-time" id="serieAButton" onclick="mudaCorA()" style="border-bottom-color: green; color: rgb(24, 139, 24); border-radius: 3px 0 0 3px;">Série A</label>
+                <label for="#" class="L-time" id="serieBButton" onclick="mudaCorB()" style="border-left: none; border-radius: inherit;">Série B</label>
+                <label for="#" class="L-time" id="europaButton" onclick="mudaCorE()" style="border-left: none; border-radius: 0 3px 3px 0;">Europa</label>
+              </div>
+
+              <!-- SÉRIE A -->
+              <div class="times-grid-A" id="serieA">
+                <!-- Linha 1 -->
+                <div class="icon-times"><img class="imagem-com-tooltip" src="/assets/img/america-mineiro-logo-1AAEF3C345-seeklogo.com.png" alt="América-Mineiro" title="América-Mineiro"/></div>
+                <div class="icon-times"><img class="imagem-com-tooltip" src="/assets/img/athletico-paranaense-logo-escudo-1.png" alt="Atlético-Paranaense" title="Atlético-PR"/></div>
+                <div class="icon-times"><img class="imagem-com-tooltip" src="/assets/img/atletico-mineiro-logo-escudo-6.png" alt="Atlético-Mineiro" title="Atlético-MG" /></div>
+                <div class="icon-times"><img class="imagem-com-tooltip" src="/assets/img/e-c-bahia-logo-escudo-1.png" alt="Bahia" title="Bahia" /></div>
+                
+                <!-- Linha 2 -->
+                <div class="icon-times"><img src="/assets/img/botafogo-logo-escudo.png" alt="Botafogo" title="Botafogo" /></div>
+                <div class="icon-times"><img src="/assets/img/Red-Bull-PNG-Pic.png" alt="Bragantino" title="Bragantino" /></div>
+                <div class="icon-times"><img src="/assets/img/logo-corinthians-512.png" alt="Corinthians" title="Corinthians" /></div>
+                <div class="icon-times"><img src="/assets/img/coritiba-logo-escudo.png" alt="Coritiba" title="Coritiba" /></div>
     
-    <div class="timesCompleto">
-    <div id="triangulo-para-cima"></div>
-        <div class="times">
-          <div class="header-time">
-            <label for="#" class="L-time" style="border-bottom-color: green; color: rgb(24, 139, 24);">Série A</label>
-            <label for="#" class="L-time" style="border-left: none; border-radius: inherit;">Série B</label>
-            <label for="#" class="L-time" style="border-left: none;">Europa</label>
-          </div>
+                <!-- Linha 3 -->
+                <div class="icon-times"><img src="/assets/img/cruzeiro-logo-escudo-.png" alt="Cruzeiro" title="Cruzeiro" /></div>
+                <div class="icon-times"><img src="/assets/img/cuiaba-logo-escudo-1.png" alt="Cuiabá" title="Cuiabá" /></div>
+                <div class="icon-times"><img src="/assets/img/flamengo.png.png" alt="Flamengo" title="Flamengo" /></div>
+                <div class="icon-times"><img src="/assets/img/fluminense.png.png" alt="Fluminense" title="Fluminense" /></div>
+    
+                <!-- Linha 4 -->
+                <div class="icon-times"><img src="/assets/img/fortaleza-ec-logo-escudo-4.png" alt="Fortaleza" title="Fortaleza" /></div>
+                <div class="icon-times"><img src="/assets/img/goias-logo-0-1.png" alt="Goiás" title="Goiás" /></div>
+                <div class="icon-times"><img src="/assets/img/gremio.png.png" alt="Grêmio" title="Grêmio" /></div>
+                <div class="icon-times"><img src="/assets/img/internacional-logo-0.png" alt="Internacional" title="Internacional" /></div>
+    
+                <!-- Linha 5 -->
+                <div class="icon-times"><img src="/assets/img/palmeiras-logo-4.png" alt="Palmeiras" title="Palmeiras" /></div>
+                <div class="icon-times"><img src="/assets/img/Santos_Logo.png" alt="Santos" title="Santos" /></div>
+                <div class="icon-times"><img src="/assets/img/sao-paulo-futebol-clube-logo-C5FC046703-seeklogo.com.png" alt="São Paulo" title="São Paulo" /></div>
+                <div class="icon-times"><img src="/assets/img/vasco-logo-1.png" alt="Vasco" title="Vasco" /></div>
+              
+              </div>
 
-          <div class="times-grid">
-            <!-- Linha 1 -->
-            <div class="icon-times"><img src="https://seeklogo.com/images/A/america-mineiro-logo-1AAEF3C345-seeklogo.com.png"/></div>
-            <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2018/12/athletico-paranaense-logo-escudo-1.png" /></div>
-            <div class="icon-times"><img style="width: 40px;" src="https://logodownload.org/wp-content/uploads/2016/10/atletico-mineiro-logo-escudo-6.png" /></div>
-            <div class="icon-times"><img src="https://logodownload.org/wp-content/uploads/2017/02/e-c-bahia-logo-escudo-1.png" /></div>
+            <!-- SÉRIE B -->
+            <div class="times-grid-B" id="serieB" style="display:none;">
+              <!-- Linha 1 -->
+              <div class="icon-times"><img src="/assets/img/ABC_FC_(E)_-_RN.svg.png" alt="ABC" title="ABC"/></div>
+              <div class="icon-times"><img src="/assets/img/Atlético_Goianiense.svg.png" alt="Atlético-GO" title="América-Mineiro"/></div>
+              <div class="icon-times"><img src="/assets/img/Avai_FC_(05-E)_-_SC.svg.png" alt="Avaí" title="Avaí"/></div>
+              <div class="icon-times"><img src="/assets/img/BotafogoFCSP2021.png" alt="Botafogo" title="Botafogo"/></div>
+              
+              <!-- Linha 2 -->
+              <div class="icon-times"><img src="/assets/img/1200px-Guarani_FC_logo.svg.png"alt="Guarani" title="Guarani"/></div>
+              <div class="icon-times"><img src="/assets/img/ItuanoFC.png" alt="Ituano" title="Ituano"/></div>
+              <div class="icon-times"><img src="/assets/img/ec-juventude-logo-escudo.png" alt="Juventude" title="Juventude"/></div>
+              <div class="icon-times"><img src="/assets/img/LondrinaEC.png" alt="Londrina" title="Londrina"/></div>
 
-            <!-- Linha 2 -->
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+              <!-- Linha 3 -->
+              <div class="icon-times"><img src="/assets/img/mirassol-logo-escudo-1.png" alt="Mirassol" title="Mirassol"/></div>
+              <div class="icon-times"><img src="/assets/img/gremio-novorizontino-logo-escudo.png" alt="Novorizontino" title="Novorizontino"/></div>
+              <div class="icon-times"><img src="/assets/img/Escudo_Oficial_Ponte_Preta.png" alt="Ponte Preta" title="Ponte Preta"/></div>
+              <div class="icon-times"><img src="/assets/img/sampaio-correa-logo-escudo.png" alt="Sampaio Corrêa" title="Sampaio Corrêa"/></div>
+  
+              <!-- Linha 4 -->
+              <div class="icon-times"><img src="/assets/img/Ceará_Sporting_Club_logo.svg.png" alt="Ceará" title="Ceará"/></div>
+              <div class="icon-times"><img src="/assets/img/2560px-EscudoCriciumaEC.svg.png" alt="Criciúma" title="Criciúma"/></div>
+              <div class="icon-times"><img src="/assets/img/internacional-logo-0.png" alt="Internacional" title="Internacional"/></div>
+              <div class="icon-times"><img src="/assets/img/CRB_logo.svg.png" alt="CRB" title="CRB"/></div>
+  
+              <!-- Linha 5 -->
+              <div class="icon-times"><img src="/assets/img/sport-recife-logo-escudo-2.png" alt="Sport" title="Sport"/></div>
+              <div class="icon-times"><img src="/assets/img/tombense-fc-logo.png" alt="Tombense" title="Tombense"/></div>
+              <div class="icon-times"><img src="/assets/img/VilaNovaFC2021.png" alt="Vila Nova" title="Vila Nova"/></div>
+              <div class="icon-times"><img src="/assets/img/ec-vitoria-logo-1.png" alt="Vitória" title="Vitória"/></div>
+            </div>
 
-            <!-- Linha 3 -->
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+            <!-- EUROPA -->
+            <div class="times-grid-E" id="serieE" style="display:none;">
+              <!-- Linha 1 -->
+              <div class="icon-times"><img src="/assets/img/Arsenal_FC.svg.png" /></div>
+              <div class="icon-times"><img src="/assets/img/atletico-madrid-logo-0.png" /></div>
+              <div class="icon-times"><img src="/assets/img/FCBarcelona.svg.png" /></div>
+              <div class="icon-times"><img src="/assets/img/FC_Bayern_München_logo_(2017).svg.png" /></div>
+              
+              <!-- Linha 2 -->
+              <div class="icon-times"><img src="/assets/img/SL_Benfica_logo.svg.png" /></div>
+              <div class="icon-times"><img src="/assets/img/bvb-borussia-dortmund-logo-1.png"/></div>
+              <div class="icon-times"><img src="/assets/img/Chelsea_FC.svg.png" /></div>
+              <div class="icon-times"><img src="/assets/img/FC_Internazionale_Milano_2021.svg.png" /></div>
 
-            <!-- Linha 4 -->
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-
-            <!-- Linha 5 -->
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
-            <img src="https://logodetimes.com/times/corinthians/logo-corinthians-512.png" />
+              <!-- Linha 3 -->
+              <div class="icon-times"><img src="/assets/img/Juventus_Logo.png" /></div>
+              <div class="icon-times"><img src="/assets/img/Liverpool_FC.svg.png" /></div>
+              <div class="icon-times"><img src="/assets/img/Manchester_City_FC_badge.svg.png" /></div>
+              <div class="icon-times"><img src="/assets/img/Manchester_United_FC_crest.svg.png" /></div>
+  
+              <!-- Linha 4 -->
+              <div class="icon-times"><img src="/assets/img/milan-logo-1.png" /></div>
+              <div class="icon-times"><img src="/assets/img/SSC_Napoli.svg.png" /></div>
+              <div class="icon-times"><img src="/assets/img/Newcastle_United_Logo.svg.png" /></div>
+              <div class="icon-times"><img src="/assets/img/psg-logo-escudo-paris-saint-germain.png" /></div>
+  
+              <!-- Linha 5 -->
+              <div class="icon-times"><img src="/assets/img/fc-porto-logo-1.png" /></div>
+              <div class="icon-times"><img src="/assets/img/real-madrid-logo-0.png" /></div>
+              <div class="icon-times"><img src="/assets/img/sevilla-fc-logo-0.png" /></div>
+              <div class="icon-times"><img src="/assets/img/Tottenham_Hotspur.svg.png" /></div>
+            </div>
+          
           </div>
         </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav1" href="#">Competições</a>
+            </li>
+            <form class="form-inline my-2 my-lg-0">
+              <li>
+                <div class="box">
+                  <div class="container-2"><span class="icon"><i class="fa fa-search"></i></span>
+                    <input id="search" type="search" placeholder="Pesquisar..."/>
+                  </div>
+                </div>  
+              </li>
+            </ul>
+            </form> 
+            
+            <a class="navbar-brand" href="/view/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAkFBMVEXh/1caGhoAABTm/1kAAA8AABbV8FTp/1oYGBrM41AAABLs/1sXFhkVFBkUEhkRDxgJAxdqdzANCRgrLx43PCHG3E4AAAhRWimitUIkKBsyNx+arT/f+Vaqv0UtMh6JmDm3zUlIUSZ4hjWNnzsdHhlcZyxkby5xfTI/RiMgIxuAkDa/1UyxxkeUpj1XYCo6QSJ6s4lJAAAFA0lEQVRoge1a25aqOhCEtEmEcPG6Rx0YFUfHEd3+/98dQMcBU+heAZ8O9QhrddGVpG/Bsjp06NChQ4cOHRAEwoPnbeFPT8OfJVEKnvc+ZVusNGO2hp6wZML15+ydWuN9CzXz4Zu0xMLXnvd9pzXaqQvciomOQIbRW3syb0e6W4wstRuA75m1JTN0a/ClLDH3tOfevLXtLBYBcGuKd9tg15bMNATmw7Wy1F9dfpsdW5JZnQCtzWOyRNDXnvsfLcms3sFetoMJWfQOPoh/tSNzRqs7VRwiS03AsrtpKzLLA0O04T575wB3g33UBqvYorW9uCs3KEYemrtL1uwbmLbzkJRZV2M9RmanqykvRcc1A5YL69ki0rQHZF43oSWSJE5rV88FF/CE8pVHMm+MeB1hRZEVTWfJmrE6VtsvIiF96jHSdo0Orxr3XD5gPZcNaklz49mmsmgFjnX4ZuIuOfmKoWNTVbmIDJSgVGSU8QmtmIbgo7AdhUhmo8NL85rtW4bnOjkvxUDmkVEqohQFYs2lY2GbhigVxUYyoxrtDn12urgkQn0f9JkBa7ZioHjQLC8vtDjjD5WJu8enMt9oYcFlc6OMT0NwMCrw2OZn3zgjXWbPNopV4vPJyQ14/EMrUQnCE6PdPHsiM587v3bXIJ7xlZHMaMVKzvYSeTNLKdj5wdksJYCDcYPPFquSiFkRAtxdmsgMV+zGOj9RxZkJ6oqmJu4SWrHC3shdbESFlVZA5tAo49MUyuyFzP8bizsB1RdsPo1kXt7L7Pkjxufrd4c0PyKQPzzbrPk8M8Y4HxTgnLGBPf67OQoFnKAjcHe0NdrN0XQVzzaHZJjh67CZxakgJbGpdptPyoo5KVUOKUkXt/SNoJL3PtucpeAPxKmotR6/DgqdOLet5rMeAsRxf9xGV/QQuPlMXu6u3L+u+XwEB3RF/sfLaWkJggZfvp73DGrsnvNqXji4C84vP7yw+eSnl8scfSCZXx8jYfO5L5frJPMAr+qSiiEvqrF5KRVJkZ52+wy7TRq1t+pirLcy/dFNZukkkyx1h0EQDBifJE5LzLj53F5lpijhvLT8AR8lohW1JeyKrs0npeP7xNzn87QNlx0wSvG+L6lIzlwQuP3erDmxfNB81owxs0NmVGdWeeu7IhnX0GbEjUsCx9dtB5NCZuHVjkayCrcZsdygjH/IZVTbB70z3zXkReNmnhYztPrmKgMzalB/QCnwKVznMsN7hl8Y1vQ/7sI5aNF8iofu2l6/yQUafYPmc5BbhKVe5esaXBjCNbzMQeXuoczNrpTUF+qKiimaAkpU4JuNIApIkBL6rEhFCpSYFXhj48qAYnTzeT2ZT3m/jTcWXEM3/kfeT2PeCLjrBddU9JTX+Iq0pvm8uKv4k0mfvzB1l7ao+bzGPwUu4SswvwFHzafnX08HoYuzMpjRSC23jKZqg585KGwiyuCm7SL6naHUfKoPkKl+EezNWC1yoMy3ch3uutIHmtZYuCsqLRqdH+ys0PhqNkI9PivFgixp1B8l47RPKUpF53JXpM8Zf1U2bsrhTzj8VFk0+M9D4e3QOBfBn3DCu5AbDaHUDWhxxl/f3xXRQb+5DZtcu//rHFSuFtX7cZ9NjiY3WVeIvsvu4fogwxDNvl1+GaD3Q+6O3x+NV58ichCgRVLpcj3Ifznj62WqXj72KDHLjE0Iq3Z63aFDhw4dOnT4P+E/c7ZN3fwnpjwAAAAASUVORK5CYII=" alt="logo" class="logo"></a>
+            
+          
+          <form class="form-inline">
+            <button class="btn" id="btnLogin" id="btnLogin" type="button"><a href="/view/tela-login.html" style="color: inherit; text-decoration: none;">Login</a></button>
+            <button class="btn" id="btnCadastro" type="button"><a href="/view/tela_cadastro.html" style="color: inherit; text-decoration: none;">Cadastre-se</a></button>
+          </form>
+          
+        </div>
+      </nav>
 
-    </div>
-
-
-        <hr>
-
-    <section class="noticias-1">
+      <!--ASSINATURA-->
+      <section class="assinatura">
+        <div class="assinaturaDiv">
+          <img src="https://s3.glbimg.com/v1/AUTH_378ee63fe83141e69caddd838034e850/static/logos/premiere_green.svg" alt="">
+          <h3>O Returno vai ser louco! Assista à maior oferta de jogos a partir de R$29,90/mês</h3>
+          <button type="button" class="btn btn-outline-success" style="border-radius: inherit; font-weight: 550;">ASSINE JÁ</button>
+        </div>
+        <hr style="margin-top: 8px !important; margin-left: 0px !important; margin-bottom: 25px; border-top: 1px solid rgba(0,0,0,.3);" />
+      </section>
+      <h1 class="topN">Top News</h1>
+      
+      <!-- NOTÍCIAS -->
+      <section class="noticias-1">
         <div class="center">
           <div class="noticias-wraper-1" >
             <div class="noticia-destaque">
@@ -120,36 +198,475 @@
           </div>
       </section>
 
-      <hr>
-
-      <div class="container">
-        <div class="col">
-          <div class="card" style="width: 700px;">
-            <img class="zoom" src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fwp-images.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F13%2F2023%2F08%2FFBL-WC-2023-WOMEN-MATCH61-ESP-SWE-1692953417-1000x750.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=630&q=25&w=840&s=cf90fb0f040c65bc3b028f107265b4df'" alt="">
-            <h4>Título</h4>
+    <!-- CARDS NOTÍCIAS -->
+    <div class="layout-geral">
+      <div class="conteudo">
+      <main class="cards">
+        <section class="card">
+          <div class="icon">
+            <img src="https://s2-ge.glbimg.com/IrLCuYQFZmaYJm9bkg5bjQy3RAQ=/0x0:1080x864/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/h/U/diIJuZRA2xCg38AE5sRw/369545047-308115078382326-1818799365648193964-n.jpg" alt="">
           </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img class="zoom" src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fwp-images.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F13%2F2023%2F08%2FFBL-WC-2023-WOMEN-MATCH61-ESP-SWE-1692953417-1000x750.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=630&q=25&w=840&s=cf90fb0f040c65bc3b028f107265b4df'" alt="">
-            <h4>Título</h4>
+            <div class="cardU">
+            <div class="not-title">
+              <span>Arce elogia Fluminense do "melhor técnico do Brasil", mas aposta no Olimpia: "Lá vai ser outra história</span>
+            </div>
+            <div class="card-footer text-white bg-success h-2" style="margin-top: 35px; width: 100%; font-size: 14.5px;">
+              <span>FutOver</span>
+              ·
+              <time class="text-muted"><span style="color: white; font-size: 14.5px;">há 8 horas</span></time>
+            </div>
           </div>
-        </div>
+          </section>
 
-        <div class="col">
-          <div class="card">
-            <img class="zoom" src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fwp-images.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F13%2F2023%2F08%2FFBL-WC-2023-WOMEN-MATCH61-ESP-SWE-1692953417-1000x750.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=630&q=25&w=840&s=cf90fb0f040c65bc3b028f107265b4df'" alt="">
-            <h4>Título</h4>
+          <section class="card">
+              <div class="icon">
+                <img src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fesportenewsmundo.com.br%2Fwp-content%2Fuploads%2F2023%2F08%2Fsevilla-fc-v-as-roma-uefa-europa-league-final-2022-23-2-scaled.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=630&q=25&w=840&s=95962b68a446a47834c925ccddc55b21" alt="">
+              </div>
+              <div class="cardU">
+              <div class="not-title">
+                <span>Uefa define fase de grupos da Liga Europa; confira como ficou o sorteio</span>
+              </div>
+              <div class="card-footer text-white bg-success h-2" style="margin-top: 35px; width: 100%; font-size: 14.5px;">
+                <span>FutOver</span>
+                ·
+                <time class="text-muted"><span style="color: white; font-size: 14.5px;">há 8 horas</span></time>
+              </div>
+            </div>
+            </section>  
+
+            <section class="card">
+              <div class="icon">
+                <img src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fmercadodofutebol.com%2Fwp-content%2Fuploads%2F2023%2F09%2FDownloader.la-64f1e8bfe443c.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=630&q=25&w=840&s=1061cbeadf213257430852ace22131e8" alt="">
+              </div>
+              <div class="cardU">
+              <div class="not-title">
+                <span>Arena Pernambuco é favorita para receber clássico entre Brasil e Argentina, pelas Eliminatórias da Copa</span>
+              </div>
+              <div class="card-footer text-white bg-success h-2" style="margin-top: 35px; width: 100%; font-size: 14.5px;">
+                <span>FutOver</span>
+                ·
+                <time class="text-muted"><span style="color: white; font-size: 14.5px;">há 8 horas</span></time>
+              </div>
+            </div>
+            </section> 
+            </main>
+
+            <hr>
+
+            <!-- CARD HORIZONTAL -->
+            <section class="card-hor">
+              <div class="card1-hor">
+                <a href="#"><img src="https://image-service.onefootball.com/transform?w=290&h=290&dpr=2&image=https%3A%2F%2Fstatic.gazetaesportiva.com%2Fuploads%2Fimagem%2F2023%2F09%2F01%2Fspfc.jpg" alt=""></a>
+                <div class="txt-hor" style="cursor: default;">
+                 <a href="#" style="color:black"><h3>CBF altera data de São Paulo x Coritiba e mantém Derby neste domingo</h3></a>
+                  <p><span style="cursor: default;">A Confederação Brasileira de Futebol alterou, nesta sexta-feira, a data da partida entre São Paulo e Coritiba, válida pela 22ª rodada do Campeonato Brasileiro. O embate passou para o dia... </span></p>
+                  <div class="alinha-credito">
+                    <div class="spanC">
+                      <span>Fut<span style="color: rgb(36, 216, 0);">Over</span></span>
+                      ·
+                      <time class="text-muted"><span style="font-size: 15.5px;">há 3 horas</span></time>
+                    </div>
+                    <div class="creditos">
+                      <a href="/view/tela-login.html" style="height: 20px;"><img class="salvar" alt="" decoding="async" srcset="https://image-service.onefootball.com/transform?w=32&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 1x, https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 2x" src="https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg" width="24" height="24" data-nimg="1" loading="lazy" style="color: transparent; justify-content: end;"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="card1-hor">
+                <a href="#"><img src="https://oneftbl-cms.imgix.net/https%3A%2F%2Fwp-images.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F13%2F2023%2F09%2FFBL-EURO-2024-POR-TRAINING-1694437504-1000x750.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=290&q=25&w=290&s=05bf589334f1f3399b72ac7e3ac47956" alt=""></a>
+                <div class="txt-hor" style="cursor: default;">
+                 <a href="#" style="color:black"><h3>📋 Sem CR7, veja a provável escalação de Portugal contra Luxemburgo</h3></a>
+                  <p><span style="cursor: default;">Portugal recebe Luxemburgo, nesta segunda-feira (11), às 15h45 (de Brasília), no Estádio Algarve, em São João da Venda, pela sexta rodada do Grupo J das Eliminatórias da Eurocopa.
+                    Em março, atuando... </span></p>
+                  <div class="alinha-credito">
+                    <div class="spanC">
+                      <span>Fut<span style="color: rgb(36, 216, 0);">Over</span></span>
+                      ·
+                      <time class="text-muted"><span style="font-size: 15.5px;">há 8 horas</span></time>
+                    </div>
+                    <div class="creditos">
+                      <a href="/view/tela-login.html" style="height: 20px;"><img class="salvar" alt="" decoding="async" srcset="https://image-service.onefootball.com/transform?w=32&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 1x, https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg 2x" src="https://image-service.onefootball.com/transform?w=48&amp;dpr=2&amp;image=https://images.onefootball.com/cw/icons/bookmark-shape-light-v2.svg" width="24" height="24" data-nimg="1" loading="lazy" style="color: transparent; justify-content: end;"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
-        </div>
 
+
+        <!-- TABELA CLASSIFICAÇÃO-->
+        <div class="tabelas">
+          <div class="element">
+            <table>
+          <h1 class="title-table"><span class="custom-font" style="font-size: 16px;">Rodada 21</span>
+            <span class=colored-text><br>Campeonato Brasileiro 2023</span></h1>
+            </div>
+          <table>
+            <tr>
+              <th colspan="2">Classificação</th>
+              <th> </th>
+              <th>P</th>
+              <th>ULT.JOGOS</th>
+            </tr>
+        
+                <tr class="item">
+                  <td width="10" height="10px">1</td>
+                  <td height="39px"><img src="/assets/img/botafogo.png.png" 
+                  width="24px" 
+                  height="24px"
+                  >  BOT</td>
+                  <td>0  <div class="square"></div> </td>
+                <td>51</td>
+                <td class="circle">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                </td>
+                </tr>
+            </tr>
+        
+                <tr class="item">
+                  <td>2</td>
+                  <td height="39px"><img src="/assets/img/palmeiras.png.png" 
+                  width="24px" 
+                  height="24px"  
+                  > PAL</td>
+                  <td>0  <div class="square"></div></td>
+                <td>40</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-red"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr class="item">
+              <td>3</td>  
+              <td height="39px"><img src="/assets/img/gremio.png.png"
+                  width="24px" 
+                  height="24px">  GRE</td>
+                  <td>2  <div class="arrow up"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr >
+                <tr class="item">
+                  <td>4</td>
+                  <td height="39px"><img src="/assets/img/flamengo.png.png" 
+                    width="24px" 
+                    height="24px">  FLA</td>
+                    <td>1  </span><div class="arrow down"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div> 
+            </td>
+        
+            </tr>
+            <tr class="item">
+              <td style="border-bottom: none;">5</td>  
+              <td height="39px" style="border-bottom: none;"><img src="/assets/img/fluminense.png.png" 
+                  width="24px" 
+                  height="24px" style="border-bottom: none;">  FLU</td>
+                  <td style="border-bottom: none;">1  <div class="arrow down"></div></td>
+                <td style="border-bottom: none;">35</td>
+                <td class="circle2" style="border-bottom: none;">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div>
+              </tr>
+            </table>
+          </table>
+          </div>
+
+          <div class="element">
+            <table>
+          <h1 class="title-table"><span class="custom-font" style="font-size: 16px;">Rodada 21</span>
+            <span class=colored-text><br>Campeonato Brasileiro 2023</span></h1>
+            </div>
+          <table>
+            <tr>
+              <th colspan="2">Classificação</th>
+              <th> </th>
+              <th>P</th>
+              <th>ULT.JOGOS</th>
+            </tr>
+        
+                <tr class="item">
+                  <td width="10" height="10px">1</td>
+                  <td height="39px"><img src="/assets/img/botafogo.png.png" 
+                  width="24px" 
+                  height="24px"
+                  >  BOT</td>
+                  <td>0  <div class="square"></div> </td>
+                <td>51</td>
+                <td class="circle">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                </td>
+                </tr>
+            </tr>
+        
+                <tr class="item">
+                  <td>2</td>
+                  <td height="39px"><img src="/assets/img/palmeiras.png.png" 
+                  width="24px" 
+                  height="24px"  
+                  > PAL</td>
+                  <td>0  <div class="square"></div></td>
+                <td>40</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-red"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr class="item">
+              <td>3</td>  
+              <td height="39px"><img src="/assets/img/gremio.png.png"
+                  width="24px" 
+                  height="24px">  GRE</td>
+                  <td>2  <div class="arrow up"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr >
+                <tr class="item">
+                  <td>4</td>
+                  <td height="39px"><img src="/assets/img/flamengo.png.png" 
+                    width="24px" 
+                    height="24px">  FLA</td>
+                    <td>1  </span><div class="arrow down"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div> 
+            </td>
+        
+            </tr>
+            <tr class="item">
+              <td style="border-bottom: none;">5</td>  
+              <td height="39px" style="border-bottom: none;"><img src="/assets/img/fluminense.png.png" 
+                  width="24px" 
+                  height="24px" style="border-bottom: none;">  FLU</td>
+                  <td style="border-bottom: none;">1  <div class="arrow down"></div></td>
+                <td style="border-bottom: none;">35</td>
+                <td class="circle2" style="border-bottom: none;">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div>
+              </tr>
+            </table>
+          </table>
+          </div>
+
+          <div class="element">
+            <table>
+          <h1 class="title-table"><span class="custom-font" style="font-size: 16px;">Rodada 21</span>
+            <span class=colored-text><br>Campeonato Brasileiro 2023</span></h1>
+            </div>
+          <table>
+            <tr>
+              <th colspan="2">Classificação</th>
+              <th> </th>
+              <th>P</th>
+              <th>ULT.JOGOS</th>
+            </tr>
+        
+                <tr class="item">
+                  <td width="10" height="10px">1</td>
+                  <td height="39px"><img src="/assets/img/botafogo.png.png" 
+                  width="24px" 
+                  height="24px"
+                  >  BOT</td>
+                  <td>0  <div class="square"></div> </td>
+                <td>51</td>
+                <td class="circle">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-gray"></div>
+                    <div class="circle circle-green"></div>
+                </td>
+                </tr>
+            </tr>
+        
+                <tr class="item">
+                  <td>2</td>
+                  <td height="39px"><img src="/assets/img/palmeiras.png.png" 
+                  width="24px" 
+                  height="24px"  
+                  > PAL</td>
+                  <td>0  <div class="square"></div></td>
+                <td>40</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-red"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>
+                    <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr class="item">
+              <td>3</td>  
+              <td height="39px"><img src="/assets/img/gremio.png.png"
+                  width="24px" 
+                  height="24px">  GRE</td>
+                  <td>2  <div class="arrow up"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>   
+                </td>
+            </tr>
+            <tr >
+                <tr class="item">
+                  <td>4</td>
+                  <td height="39px"><img src="/assets/img/flamengo.png.png" 
+                    width="24px" 
+                    height="24px">  FLA</td>
+                    <td>1  </span><div class="arrow down"></div></td>
+                <td>36</td>
+                <td class="circle2">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-gray"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div> 
+            </td>
+        
+            </tr>
+            <tr class="item">
+              <td style="border-bottom: none;">5</td>  
+              <td height="39px" style="border-bottom: none;"><img src="/assets/img/fluminense.png.png" 
+                  width="24px" 
+                  height="24px" style="border-bottom: none;">  FLU</td>
+                  <td style="border-bottom: none;">1  <div class="arrow down"></div></td>
+                <td style="border-bottom: none;">35</td>
+                <td class="circle2" style="border-bottom: none;">
+                  <div class="circle-container">
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-red"></div>
+                      <div class="circle circle-green"></div>
+                      <div class="circle circle-gray"></div>
+              </tr>
+            </table>
+          </table>
+          </div>
+        
+        </div>
       </div>
 
-      <hr>
+            <!-- FOOTER -->
+            <footer>
+              <div class="container-footer">
+                  <div class="row-footer">
+                      <div class="footer-col">
+                          <h4>Mais <strong>Futover</strong></h4>
+                          <ul>
+                              <li> <a href="">Futover App</a> </li>
+                              <li> <a href=""> Canais Futover</a> </li>
+                              <li> <a href=""> eFutover</a> </li>
+                              <li> <a href=""> FutoverW</a> </li>
+                          </ul>
 
-        
-    <script src="/js/index.js"></script>
+                      </div>
+                      <div class="footer-col">
+                          <h4>Em <strong>Destaque</strong></h4>
+                          <ul>
+                              <li> <a href=""> Futebol</a> </li>
+                              <li> <a href=""> NBA</a> </li>
+                              <li> <a href=""> NFL</a> </li>
+                              <li> <a href=""> MMA</a> </li>
+                          </ul>
+
+                      </div>
+                      <div class="footer-col">
+                          <h4>Melhores <strong>Campeonatos</strong></h4>
+                          <ul>
+                              <li> <a href=""> Libertadores</a> </li>
+                              <li> <a href=""> Brasileirão</a> </li>
+                              <li> <a href=""> Premier league</a> </li>
+                              <li> <a href=""> LaLiga</a> </li>
+                          </ul>
+
+                      </div>
+                      <div class="footer-col">
+                          <h4>Receba notícias atualizadas <strong style="white-space: nowrap;">24 horas!</strong></h4>
+                          <div class="form-sub">
+                                  <input type="email" placeholder="Insira um email..." required>
+                                  <button>ENVIAR</button>
+                              </form>
+                          </div>
+                          
+                          </div>
+
+                        <div class="medias-socias">
+                              <a href=""><i class="fa fa-facebook"></i></a>
+                              <a href=""><i class="fa fa-instagram"></i></a>
+                              <a href=""><i class="fa fa-twitter"></i></a>
+                              <a href=""><i class="fa fa-youtube"></i></a>
+                        </div>
+
+                      </div>
+                  </div>
+              </footer>
+
+
+    <script src="/assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
