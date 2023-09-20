@@ -13,6 +13,8 @@ nav {
 .layout-geral {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 hr {
@@ -474,6 +476,10 @@ main.cards {
   padding: 32px;
   width: 100%;
   cursor: default;
+}
+
+.conteudo {
+  width: 55%;
 }
 
 .card {
