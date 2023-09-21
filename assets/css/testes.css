@@ -137,7 +137,8 @@ hr {
   color: #000000;
 }
 
-.container-2 input#search:focus, .container-2 input#search:active {
+.container-2 input#search:focus,
+.container-2 input#search:active {
   outline: none;
   width: 250px;
 }
@@ -172,7 +173,7 @@ body {
 .timesCompleto {
   display: none;
   margin-left: 16px;
-} 
+}
 
 .times {
   width: 264px;
@@ -234,7 +235,7 @@ body {
   z-index: 2;
 }
 
-.times-grid-E>.icon-times img {
+.times-grid-E > .icon-times img {
   width: 95%;
 }
 
@@ -503,7 +504,7 @@ main.cards {
   width: 220px;
   height: 165px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 3px;
 }
 
@@ -529,7 +530,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border-bottom: 1px solid #a8a8a8;
   text-align: center !important;
 }
@@ -742,12 +744,12 @@ th {
   margin-bottom: 0 !important;
 }
 
-/* AGENDA DIA */
+/* AGENDA DO DIA */
 .hr {
   margin-top: 18px;
 }
 
-.hr hr{
+.element-agenda hr{
   margin-top: 10px !important;
   margin-left: 0 !important;
 }
@@ -776,10 +778,11 @@ th {
 
 .informacao {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: green;
   transition: 0.1s ease-in-out;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 .informacao:hover {
@@ -801,7 +804,7 @@ div a {
 
 .element-agenda {
   width: 450px;
-  height: 533px;
+  height: 560px;
   padding-top: 0px;
   padding-right: 24px;
   padding-bottom: 0px;
@@ -820,7 +823,11 @@ div a {
 }
 
 .agenda {
-  margin-top: 20px;
+  margin-top: 25px;
+}
+
+.agenda:first-child {
+  margin-top: 0px;
 }
 
 .linha-time-dir {
@@ -873,7 +880,6 @@ div a {
   display: flex;
   align-items: center;
   transition: 0.2s ease-in-out;
-  margin-top: 4%;
   width: 145px;
 }
 
@@ -885,6 +891,32 @@ div a {
 .title-agenda h2 {
   font-size: 21px;
   font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 3px;
+}
+
+.ao-vivo {
+  font-size: 12px;
+  width: fit-content;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #cd3529;
+  color: #fff;
+  animation-name: pisca;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  margin-top: 0 !important;
+  } 
+
+@keyframes pisca{
+  0%   {background-color: red;}
+25%  {background-color: rgba(255, 0, 0, 0.829);}
+50%  {background-color: rgba(255, 0, 0, 0.629);}
+100% {background-color: rgba(255, 94, 0, 0.429);}
 }
 
 
@@ -902,7 +934,7 @@ div a {
   width: 300px;
   height: 280px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin-bottom: 20px;
   border-radius: 2px;
 }
@@ -1229,4 +1261,4 @@ button:active {
     margin: 11px 0px 0 0px;
   }
 
-} *//*# sourceMappingURL=style.css.map */
+} */ /*# sourceMappingURL=style.css.map */

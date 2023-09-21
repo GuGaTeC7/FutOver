@@ -4,1243 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FutOver</title>
+    <link rel="stylesheet" href="/assets/css/testes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <link rel="stylesheet" href="/assets/css/testes.css">
-    <style>
-      @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&disp");
-/* NAVBAR */
-nav {
-  background-image: linear-gradient(45deg, #242424 50%, #239b3b 50%);
-}
-
-.logo {
-  width: 60px;
-  margin-right: 50px;
-}
-
-.layout-geral {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-hr {
-  margin-top: 2rem !important;
-  margin-left: 22px;
-}
-
-#nav1 {
-  color: rgb(255, 255, 255);
-  display: flex;
-  font-weight: 700;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-  font-size: 17.5px;
-  margin-top: 6px;
-  margin-left: 4px;
-}
-
-#nav1:hover {
-  color: #239b3b;
-  border-width: 3px !important;
-  border-color: #ffffff;
-}
-
-#escudo {
-  color: rgb(255, 255, 255);
-  display: flex;
-  font-weight: 700;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-  font-size: 17.5px;
-  margin-top: 6px;
-  margin-left: 4px;
-}
-
-#escudo:hover {
-  color: #239b3b;
-  border-width: 3px !important;
-  border-color: #ffffff;
-}
-
-#navbarSupportedContent {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 20px;
-}
-
-#btnLogin {
-  height: 50px;
-  margin-right: 5px;
-  text-align: right;
-  border-width: 2px;
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  font-weight: 700;
-}
-
-#btnLogin:hover {
-  border-color: rgb(0, 0, 0);
-}
-
-#btnCadastro {
-  text-align: right;
-  border-width: 2px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  font-weight: 650;
-}
-
-#btnCadastro:hover {
-  border-color: rgb(255, 255, 255);
-}
-
-.form-controlC {
-  display: flex;
-  justify-content: center;
-  width: 320px;
-  margin: 0 100px 0 0;
-}
-
-.form-controlC:hover {
-  border-color: rgb(36, 216, 0);
-}
-
-.imgPesq {
-  margin: 2px 3px 0 0;
-}
-
-/* SEARCH BAR */
-.box {
-  width: 10px;
-  height: 50px;
-}
-
-.container-2 {
-  width: 20px;
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
-}
-
-.container-2 input#search {
-  width: 10px;
-  height: 40px;
-  background: #ffffff;
-  border: none;
-  font-size: 10pt;
-  float: left;
-  color: #262626;
-  padding-left: 35px;
-  border-radius: 5px;
-  color: #000000;
-  transition: width 0.55s ease;
-  margin-top: 6px;
-}
-
-.container-2 .icon {
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 14px;
-  z-index: 1;
-  color: #000000;
-}
-
-.container-2 input#search:focus, .container-2 input#search:active {
-  outline: none;
-  width: 250px;
-}
-
-.container-2:hover input#search {
-  width: 250px;
-}
-
-.container-2:hover .icon {
-  color: #000000;
-}
-
-.topN {
-  margin: 0 0 15px 20px;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 28px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background-color: #f9f9f9 !important;
-  cursor: default;
-}
-
-/* MODAL TIMES */
-.timesCompleto {
-  display: none;
-  margin-left: 16px;
-} 
-
-.times {
-  width: 264px;
-  height: 395px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
-  border-radius: 4.5px;
-  position: absolute;
-  z-index: 2;
-}
-
-.header-time {
-  display: flex;
-  justify-content: center;
-}
-
-.L-time {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  width: 78px;
-  justify-content: center;
-  display: flex;
-  padding: 2px;
-  font-weight: 750;
-  color: rgba(0, 0, 0, 0.514);
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.times-grid-A {
-  display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-left: 10px;
-}
-
-.times-grid-B {
-  display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  margin-left: 15px;
-  position: absolute;
-  z-index: 2;
-}
-
-.times-grid-E {
-  display: grid;
-  grid-template-columns: 50px 50px 50px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-left: 20px;
-  position: absolute;
-  z-index: 2;
-}
-
-.times-grid-E>.icon-times img {
-  width: 95%;
-}
-
-.icon-times img {
-  width: 100%;
-}
-
-.icon-times {
-  width: 35px;
-  margin-top: 5px;
-}
-
-#triangulo-para-cima {
-  width: 0;
-  height: 0;
-  border-left: 18px solid;
-  border-right: 18px solid;
-  border-bottom: 18px solid rgb(255, 255, 255);
-  position: absolute;
-  top: 65.6%;
-  background-color: #f50000;
-}
-
-/* ASSINATURA */
-.assinaturaDiv {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.assinatura h3 {
-  font-size: 25px;
-  margin-top: 5px;
-  margin-left: 18px;
-}
-
-.assinatura button {
-  margin-left: 18px;
-}
-
-/* NOTÍCIAS */
-.noticias-1 {
-  width: 90%;
-  margin: 0 0 0 85px;
-}
-
-.noticias-wraper-1 {
-  display: flex;
-  width: 100%;
-}
-
-.noticia-destaque {
-  width: 80%;
-  padding-top: 20%;
-  background-color: #222;
-  border: 2px solid white;
-  position: relative;
-}
-
-.noticia-destaque h3 {
-  pointer-events: none;
-}
-
-.noticia-destaque-single {
-  left: 0;
-  top: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.noticia-destaque-single img {
-  width: 100%;
-  height: 100%;
-  transition: 4s all ease-in-out;
-}
-
-.noticia-destaque-single h3 {
-  padding: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-weight: 700;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-  font-size: 25px;
-}
-
-.outras-noticias-1 {
-  display: flex;
-  width: 50%;
-  flex-wrap: wrap;
-}
-
-.outras-noticias-1 h3 {
-  pointer-events: none;
-}
-
-.outras-noticias-1-single {
-  width: 90%;
-  padding-top: 30%;
-  background-size: cover;
-  background-position: center;
-  border: 2px solid white;
-  background-color: #222;
-  position: relative;
-  background-image: url("https://oneftbl-cms.imgix.net/https%3A%2F%2Fwp-images.onefootball.com%2Fwp-content%2Fuploads%2Fsites%2F13%2F2023%2F08%2FGetafe-CF-v-FC-Barcelona-LaLiga-EA-Sports-1692962490-1000x750.jpg?auto=format%2Ccompress&crop=faces&dpr=2&fit=crop&h=630&q=25&w=840&s=0564c172eb0040294bcdd3e1d7e48131");
-}
-
-.outras-noticias-1-single h3 {
-  color: white;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 25px;
-}
-
-.outras-noticias-2-single {
-  width: 90%;
-  padding-top: 30%;
-  background-size: cover;
-  background-position: center;
-  border: 2px solid white;
-  background-color: #222;
-  position: relative;
-}
-
-.outras-noticias-2-single h3 {
-  color: white;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 25px;
-}
-
-.outras-noticias-3-single {
-  width: 50%;
-  padding-top: 30%;
-  background-size: cover;
-  background-position: center;
-  border: 2px solid white;
-  background-color: #222;
-  position: relative;
-}
-
-.outras-noticias-3-single h3 {
-  color: white;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 25px;
-}
-
-.outras-noticias-4-single {
-  width: 50%;
-  padding-top: 30%;
-  background-size: cover;
-  background-position: center;
-  border: 2px solid white;
-  background-color: #222;
-  position: relative;
-}
-
-.outras-noticias-4-single h3 {
-  color: white;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.noticia-destaque:hover .noticia-destaque-single {
-  transform: scale(1.1);
-}
-
-/* EFEITO ZOOM */
-.noticia-destaque-single {
-  transition: all 0.3s;
-}
-
-.noticia-destaque-single:hover {
-  z-index: 10;
-  transform: scale(1.1);
-  border: 1px solid white;
-}
-
-.noticia-destaque-single:hover h3 {
-  background-color: #000000;
-}
-
-.outras-noticias-1-single:hover h3 {
-  background-color: #000000;
-}
-
-.outras-noticias-2-single:hover h3 {
-  background-color: #000000;
-}
-
-.outras-noticias-1-single {
-  transition: all 0.3s;
-}
-
-.outras-noticias-1-single:hover {
-  z-index: 10;
-  transform: scale(1.1);
-}
-
-.outras-noticias-2-single {
-  transition: all 0.3s;
-}
-
-.outras-noticias-2-single:hover {
-  z-index: 10;
-  transform: scale(1.1);
-}
-
-.outras-noticias-3-single {
-  transition: all 0.3s;
-}
-
-.outras-noticias-3-single:hover {
-  z-index: 10;
-  transform: scale(1.1);
-}
-
-.outras-noticias-4-single {
-  transition: all 0.3s;
-}
-
-.outras-noticias-4-single:hover {
-  z-index: 10;
-  transform: scale(1.1);
-}
-
-.outras-noticias-1 h3 {
-  color: #ffffff;
-  font-weight: 700;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-/* CARDS NOTÍCIAS */
-main.cards {
-  display: flex;
-  padding: 32px;
-  width: 100%;
-  cursor: default;
-}
-
-.conteudo {
-  width: 55%;
-}
-
-.card {
-  margin-left: 30px !important;
-}
-
-.card:first-child {
-  margin-left: 0 !important;
-}
-
-.cardU {
-  height: 165px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 8px;
-}
-
-.icon img {
-  max-width: 100%;
-  width: 220px;
-  height: 165px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 3px;
-}
-
-.not-title span {
-  font-size: 15.5px;
-  justify-content: initial;
-  text-transform: uppercase;
-}
-
-.not-title {
-  width: 200px;
-  height: 60%;
-  padding-bottom: 2px;
-  margin: 9px 0px 0 0px;
-}
-
-/* TABELA CAMPEONATO */
-.tabelas {
-  margin: 30px 0 0 0;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-th, td {
-  border-bottom: 1px solid #a8a8a8;
-  text-align: center !important;
-}
-
-th {
-  background-color: #ffffff;
-}
-
-tr:nth-child(even) {
-  background-color: #ffffff;
-}
-
-table {
-  width: 400px;
-  padding: 10px;
-}
-
-th {
-  color: rgb(10, 10, 10);
-}
-
-.circle-container {
-  display: flex;
-}
-
-.circle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-left: 7px;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle.circle-gray {
-  background-color: #a7a7a7;
-}
-
-.circle.circle-green {
-  background-color: #006100;
-}
-
-.circle.circle-gray {
-  background-color: #a7a7a7;
-}
-
-.circle.circle-green {
-  background-color: #006600;
-}
-
-.circle2 {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle.circle-gray {
-  background-color: #127315;
-}
-
-.circle.circle-red {
-  background-color: #b50000;
-}
-
-.circle.circle-gray {
-  background-color: #127315;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle3 {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle.circle-red {
-  background-color: #b50000;
-}
-
-.circle.circle-gray {
-  background-color: #a7a7a7;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle.circle-gray {
-  background-color: #a7a7a7;
-}
-
-.circle4 {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle.circle.circle-gray {
-  background-color: #a7a7a7;
-}
-
-.circle.circle-red {
-  background-color: #b50000;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle5 {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.circle.circle-red {
-  background-color: #b50000;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.circle.circle-red {
-  background-color: #b50000;
-}
-
-.circle.circle-green {
-  background-color: #127315;
-}
-
-.element {
-  width: 450px;
-  height: 340px;
-  padding-top: 0px;
-  padding-right: 24px;
-  padding-bottom: 0px;
-  padding-left: 24px;
-  margin-left: 50px;
-  margin-top: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 7px;
-  background-color: #ffffff;
-}
-
-.element:first-child {
-  margin-top: 15px;
-}
-
-.arrow {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-}
-
-.arrow.up {
-  border-bottom: 10px solid #127315;
-}
-
-.arrow.down {
-  border-top: 10px solid #b50000;
-}
-
-.square {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  background-color: gray;
-}
-
-.colored-text {
-  color: #127315;
-  font-size: 19px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.custom-font {
-  margin-bottom: 0 !important;
-}
-
-/* AGENDA DIA */
-.hr {
-  margin-top: 18px;
-}
-
-.hr hr{
-  margin-top: 10px !important;
-  margin-left: 0 !important;
-}
-
-.agenda-icon-time-esq {
-  width: 40px;
-  height: 40px;
-  margin-left: 5px;
-}
-
-.agenda-icon-time-dir {
-  width: 40px;
-  height: auto;
-  margin-right: 5px;
-}
-
-.time-icon {
-  width: 100%;
-}
-
-.time-visitante {
-  width: 25px;
-  height: 25px;
-  margin-left: 5px;
-}
-
-.informacao {
-  font-size: 16px;
-  font-weight: 600;
-  color: green;
-  transition: 0.1s ease-in-out;
-  cursor: pointer;
-}
-
-.informacao:hover {
-  filter: brightness(1.5);
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-div a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: #127315;
-  font-size: 15px;
-}
-
-.element-agenda {
-  width: 450px;
-  height: 533px;
-  padding-top: 0px;
-  padding-right: 24px;
-  padding-bottom: 0px;
-  padding-left: 24px;
-  margin-left: 50px;
-  margin-top: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 7px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-}
-
-.element-agenda:first-child {
-  margin-top: 15px;
-}
-
-.agenda {
-  margin-top: 20px;
-}
-
-.linha-time-dir {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 120px;
-}
-
-.linha-time-esq {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 120px;
-}
-
-.title-horarios {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.times-agenda {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.linha-completa {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-}
-
-.title-horarios p {
-  font-weight: 300;
-}
-
-.alinha-agenda {
-  justify-content: center;
-  display: flex;
-}
-
-.mais-jogos {
-  font-size: 17.5px;
-  text-transform: uppercase;
-  color: #127315;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  transition: 0.2s ease-in-out;
-  margin-top: 4%;
-  width: 145px;
-}
-
-.mais-jogos:hover {
-  filter: brightness(1.5);
-  cursor: pointer;
-}
-
-.title-agenda h2 {
-  font-size: 21px;
-  font-weight: 600;
-}
-
-
-/* CARD HORIZONTAL*/
-.card1-hor {
-  display: flex;
-  flex-direction: row;
-  width: 750px;
-  height: 300px;
-  margin-left: 30px;
-  margin-top: 50px;
-}
-
-.card1-hor img:first-child {
-  width: 300px;
-  height: 280px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 20px;
-  border-radius: 2px;
-}
-
-.card1-hor h3 {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.txt-hor {
-  font-size: 15px;
-  margin: 29px 0 0 12.5px;
-}
-
-.txt-hor p {
-  margin-top: 20px;
-}
-
-.alinha-credito {
-  margin-top: 52px;
-}
-
-.spanC {
-  position: absolute;
-}
-
-.creditos {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 25px;
-}
-
-.salvar {
-  width: 23px !important;
-  height: 23px !important;
-  transition: 0.2s ease-in-out;
-}
-
-.salvar:hover {
-  filter: invert(75%);
-}
-
-/* FOOTER */
-footer {
-  background-color: #239b3b;
-  padding: 50px 35px 20px 35px;
-  width: 100%;
-  margin-top: 7%;
-  bottom: 0;
-  left: 0;
-}
-
-.container-footer {
-  max-width: 1400px;
-  margin: auto;
-}
-
-.row-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
-}
-
-.footer-col ul {
-  font-size: 22px;
-  color: white;
-  margin-bottom: 20px;
-  font-weight: 500;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.footer-col ul {
-  list-style: none;
-}
-
-.footer-col ul li {
-  margin: 10px;
-}
-
-.footer-col ul li a {
-  font-size: 16px;
-  text-transform: capitalize;
-  color: white;
-  text-decoration: none;
-  font-weight: 300;
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.footer-col ul li a:hover {
-  color: #cecdcd;
-}
-
-.container-footer .medias-socias {
-  margin-top: 30px;
-}
-
-.container-footer .medias-socias a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  margin: 0 10px 10px 0;
-  text-decoration: none;
-  border-radius: 50%;
-  color: white;
-  border: 1px solid white;
-  transition: all 0 0.5s ease;
-}
-
-.container-footer .medias-socias a i {
-  font-size: 20px;
-}
-
-.container-footer .medias-socias a:hover {
-  color: rgba(15, 73, 0, 0.8078431373);
-  background-color: white;
-}
-
-.footer-col .form-sub input {
-  width: 100%;
-  padding: 10px;
-  font-size: 15px;
-  outline: none;
-  border: 1px solid white;
-  color: white;
-  background-color: #239b3b;
-}
-
-.footer-col .form-sub input::-moz-placeholder {
-  color: white;
-}
-
-.footer-col .form-sub input::placeholder {
-  color: white;
-}
-
-.footer-col .form-sub button {
-  width: 100%;
-  margin-top: 10px;
-  padding: 10px;
-  font-size: 10px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  border-radius: 3px;
-  font-weight: bold;
-  background-color: white;
-  transition: all 0.2s ease;
-}
-
-button:active {
-  transform: scale(0.96);
-}
-
-.footer-col .form-sub button:hover {
-  background-color: rgb(216, 216, 216);
-}
-
-@media (max-width: 800px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 600px) {
-  .footer-col {
-    width: 100%;
-  }
-}
-/* TELA JOGOS */
-.container {
-  display: flex;
-  grid-gap: 1rem;
-  margin-top: 15px;
-  align-items: center;
-}
-
-.dia {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(87, 87, 87, 0.301);
-  width: 85px;
-  height: 60px;
-  border-radius: 7%;
-}
-
-.dia:hover {
-  animation-name: dia;
-  animation-duration: 0.5s;
-  border-color: rgba(0, 0, 0, 0.733);
-  cursor: pointer;
-}
-
-.dia h3 {
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.seta:hover {
-  background-color: rgba(71, 71, 71, 0.2549019608);
-  border-radius: 50%;
-  animation-name: seta;
-  animation-duration: 0.5s;
-  cursor: pointer;
-}
-
-.icon-seta:first-child {
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-}
-
-.icon-seta {
-  width: 40px;
-  height: 40px;
-}
-
-/* ANIMAÇÕES */
-@keyframes seta {
-  0% {
-    background-color: rgba(71, 71, 71, 0.0470588235);
-  }
-  100% {
-    background-color: rgba(71, 71, 71, 0.2549019608);
-  }
-}
-@keyframes dia {
-  0% {
-    border-color: rgba(0, 0, 0, 0.39);
-  }
-  50% {
-    border-color: rgba(0, 0, 0, 0.596);
-  }
-  100% {
-    border-color: rgba(0, 0, 0, 0.733);
-  }
-}
-/* RESPONSIVE SCREENS */
-/* @media screen and (min-width: 1318px) {
-  .card {
-    width: 595px;
-  }
-
-  .icon img {
-    max-width: 100%;
-    width: 450px;
-    height: 185px;
-    object-fit: cover;
-    border-radius: 3px;
-  }
-
-  .not-title span {
-    font-size: 15.5px;
-    justify-content: initial;
-    text-transform: uppercase;
-  }
-
-  .not-title {
-    width: 200px;
-    padding-bottom: 2px;
-    margin: 11px 0px 0 0px;
-  }
-
-}
-
-@media screen and (min-width: 1420px) {
-  .card {
-    width: 595px;
-  }
-
-  .icon img {
-    max-width: 100%;
-    width: 450px;
-    height: 185px;
-    object-fit: cover;
-    border-radius: 3px;
-  }
-
-  .not-title span {
-    font-size: 15.5px;
-    justify-content: initial;
-    text-transform: uppercase;
-  }
-
-  .not-title {
-    width: 250px;
-    padding-bottom: 2px;
-    margin: 11px 0px 0 0px;
-  }
-
-}
-
-@media screen and (min-width: 1900px) {
-  .card {
-    width: 395px;
-  }
-
-  .icon img {
-    max-width: 100%;
-    width: 750px;
-    height: 185px;
-    object-fit: cover;
-    border-radius: 3px;
-  }
-
-  .not-title span {
-    font-size: 17.5px;
-    justify-content: initial;
-    text-transform: uppercase;
-  }
-
-  .not-title {
-    width: 400px;
-    padding-bottom: 2px;
-    margin: 11px 0px 0 0px;
-  }
-
-} *//*# sourceMappingURL=style.css.map */
-    </style>
 </head>
 <body>  
     <!-- NAVBAR -->
@@ -1432,7 +198,7 @@ button:active {
           </div>
       </section>
 
-    <!-- CARDS NOTÍCIAS -->
+      <!-- CARDS NOTÍCIAS -->
     <div class="layout-geral">
       <div class="conteudo">
       <main class="cards">
@@ -1531,7 +297,7 @@ button:active {
           </div>
 
 
-        <!-- TABELA CLASSIFICAÇÃO-->
+          <!-- TABELA CLASSIFICAÇÃO-->
         <div class="tabelas">
           <div class="element">
             <table>
@@ -1635,15 +401,16 @@ button:active {
           </table>
           </div>
 
-            <div class="element-agenda">
-              <div class="hr">
-                <div class="title-agenda">
-                  <h2>Agenda do dia</h2>
-                </div>
+          <!--  -->
+
+          <div class="element-agenda">
+            <div class="title-agenda">
+              <h2>Agenda do dia</h2>
+            </div>
+
+            <hr />
         
-                <hr />
-        
-                <div class="agenda">
+                <div class="agenda" style="margin-top: 5px !important;">
                   <div class="title-horarios">
                     <p>Campeonato Brasileiro</p>
                     <span><b>Hoje: 20:00</b></span>
@@ -1676,95 +443,97 @@ button:active {
                       </div>
                     </div>
                     <span class="informacao">
-                      <i>FIQUE POR DENTRO</i>
+                      <p>FIQUE POR DENTRO</p>
                     </span>
                   </div>
                 </div>
-        
+
                 <div class="agenda">
-                    <div class="title-horarios">
-                      <p>Campeonato Brasileiro</p>
-                      <span><b>Hoje: 21:00</b></span>
-                    </div>
-                    <div
-                      style="display: flex; flex-direction: column; align-items: center"
-                    >
-                      <div class="alinha-agenda">
-                        <div class="times-agenda">
-                          <div class="linha-completa">
-                            <div class="linha-time-esq">
-                              COR
-                              <div class="agenda-icon-time-esq">
-                                <img
-                                  class="time-icon"
-                                  src="/assets/img/Corinthians.png"
-                                />
-                              </div>
-                            </div>
-          
-                            <span class="vs">X</span>
-          
-                            <div class="linha-time-dir">
-                              <div class="agenda-icon-time-dir">
-                                <img class="time-icon" src="/assets/img/gremio.png.png" />
-                              </div>
-                              GRE
+                  <div class="title-horarios">
+                    <p>Campeonato Brasileiro</p>
+                    <span><b>Hoje: 21:00</b></span>
+                  </div>
+                  <div
+                    style="display: flex; flex-direction: column; align-items: center"
+                  >
+                    <div class="alinha-agenda">
+                      <div class="times-agenda">
+                        <div class="linha-completa">
+                          <div class="linha-time-esq">
+                            COR
+                            <div class="agenda-icon-time-esq">
+                              <img
+                                class="time-icon"
+                                src="/assets/img/Corinthians.png"
+                              />
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <span class="informacao">
-                        <i>FIQUE POR DENTRO</i>
-                      </span>
-                    </div>
-                  </div>
         
-                  <div class="agenda" style="margin-bottom: 0px;">
-                    <div class="title-horarios">
-                      <p>Campeonato Brasileiro Série B</p>
-                      <span><b>Hoje: 21:00</b></span>
-                    </div>
-                    <div
-                      style="display: flex; flex-direction: column; align-items: center"
-                    >
-                      <div class="alinha-agenda">
-                        <div class="times-agenda">
-                          <div class="linha-completa">
-                            <div class="linha-time-esq">
-                              NOV
-                              <div class="agenda-icon-time-esq">
-                                <img
-                                  class="time-icon"
-                                  src="/assets/img/Novorizontino.png"
-                                />
-                              </div>
+                          <span class="vs">X</span>
+        
+                          <div class="linha-time-dir">
+                            <div class="agenda-icon-time-dir">
+                              <img class="time-icon" src="/assets/img/gremio.png.png" />
                             </div>
-          
-                            <span class="vs">X</span>
-          
-                            <div class="linha-time-dir">
-                              <div class="agenda-icon-time-dir">
-                                <img class="time-icon" src="/assets/img/Ceara.png" />
-                              </div>
-                              CEA
-                            </div>
+                            GRE
                           </div>
                         </div>
                       </div>
-                      <span class="informacao">
-                        <i>FIQUE POR DENTRO</i>
-                      </span>
                     </div>
+                    <span class="informacao">
+                      <p>FIQUE POR DENTRO</p>
+                    </span>
                   </div>
-                  
-                  <hr>
+                </div>
+
+                <div class="agenda" style="margin-bottom: 0px;">
+                  <div class="title-horarios">
+                    <p>Campeonato Brasileiro Série B</p>
+                    <span><b>Hoje: 21:00</b></span>
+                  </div>
+                  <div
+                    style="display: flex; flex-direction: column; align-items: center"
+                  >
+                    <div class="alinha-agenda">
+                      <div class="times-agenda">
+                        <div class="linha-completa">
+                          <div class="linha-time-esq">
+                            NOV
+                            <div class="agenda-icon-time-esq">
+                              <img
+                                class="time-icon"
+                                src="/assets/img/Novorizontino.png"
+                              />
+                            </div>
+                          </div>
+        
+                          <span class="vs">X</span>
+        
+                          <div class="linha-time-dir">
+                            <div class="agenda-icon-time-dir">
+                              <img class="time-icon" src="/assets/img/Ceara.png" />
+                            </div>
+                            CEA
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="informacao">
+                         <div class="ao-vivo">Ao vivo</div>
+                    </span>
+                  </div>
+                </div>
+
+                <hr>
         
                   <span class="mais-jogos">
                     <i>Mais jogos</i> <img src="/assets/img/seta-verde.png" style="width: 25px; height: 25px; margin-left: 5px;">
                   </span>
-        
+          </div>
 
-          <!-- <div class="element">
+          <!--  -->
+
+          <div class="element">
             <table>
           <h1 class="title-table"><span class="custom-font" style="font-size: 16px;">Rodada 21</span>
             <span class=colored-text><br>Campeonato Brasileiro 2023</span></h1>
@@ -1864,13 +633,13 @@ button:active {
               </tr>
             </table>
           </table>
-          </div> -->
+          </div>
+          
         
         </div>
       </div>
 
-      <!-- FOOTER -->
-      <div class="footer">
+            <!-- FOOTER -->
             <footer>
               <div class="container-footer">
                   <div class="row-footer">
@@ -1923,7 +692,6 @@ button:active {
 
                       </div>
                   </div>
-                </div>
               </footer>
 
 
