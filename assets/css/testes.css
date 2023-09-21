@@ -742,6 +742,152 @@ th {
   margin-bottom: 0 !important;
 }
 
+/* AGENDA DIA */
+.hr {
+  margin-top: 18px;
+}
+
+.hr hr{
+  margin-top: 10px !important;
+  margin-left: 0 !important;
+}
+
+.agenda-icon-time-esq {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.agenda-icon-time-dir {
+  width: 40px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.time-icon {
+  width: 100%;
+}
+
+.time-visitante {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.informacao {
+  font-size: 16px;
+  font-weight: 600;
+  color: green;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.informacao:hover {
+  filter: brightness(1.5);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+div a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #127315;
+  font-size: 15px;
+}
+
+.element-agenda {
+  width: 450px;
+  height: 533px;
+  padding-top: 0px;
+  padding-right: 24px;
+  padding-bottom: 0px;
+  padding-left: 24px;
+  margin-left: 50px;
+  margin-top: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.element-agenda:first-child {
+  margin-top: 15px;
+}
+
+.agenda {
+  margin-top: 20px;
+}
+
+.linha-time-dir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.linha-time-esq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 120px;
+}
+
+.title-horarios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.times-agenda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.linha-completa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.title-horarios p {
+  font-weight: 300;
+}
+
+.alinha-agenda {
+  justify-content: center;
+  display: flex;
+}
+
+.mais-jogos {
+  font-size: 17.5px;
+  text-transform: uppercase;
+  color: #127315;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  margin-top: 4%;
+  width: 145px;
+}
+
+.mais-jogos:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+}
+
+.title-agenda h2 {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+
 /* CARD HORIZONTAL*/
 .card1-hor {
   display: flex;
