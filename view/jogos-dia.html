@@ -11,10 +11,6 @@ body {
     background-color: rgba(0, 0, 0, 0.13);
 }
 
-    .horarios {
-        margin: 160px;
-    }
-
     .time-mandante {
         width: 25px;
         height: 25px;
@@ -38,10 +34,6 @@ body {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
-    .horarios2 {
-        margin: 110px;
-    }
-
     a{
         color: black;
         text-decoration: none;
@@ -55,9 +47,9 @@ body {
       font-size: 15px;
     }
 
-    .element {
+.element {
   width: 450px;
-  height: 340px;
+  height: 700px;
   padding-top: 0px;
   padding-right: 24px;
   padding-bottom: 0px;
@@ -74,23 +66,82 @@ body {
 .element:first-child {
   margin-top: 15px;
 }
+
+.alinha-agenda {
+}
+
+.title-horarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* @keyframes pisca{
+    0%   {background-color: red;}
+  25%  {background-color: rgba(255, 0, 0, 0.644);}
+  50%  {background-color: rgba(255, 0, 0, 0.397);}
+  100% {background-color: rgba(255, 94, 0, 0.233);}
+  100%   {background-color: red;}
+  50%  {background-color: rgba(255, 0, 0, 0.644);}
+  25%  {background-color: rgba(255, 0, 0, 0.397);}
+  0% {background-color: rgba(255, 94, 0, 0.233);}
+}
+
+.ao-vivo {
+  display: none;
+  width: 50px; 
+  background: #cd3529;
+  color: #fff;
+  animation-name: pisca;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+} */
+
+.times-agenda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 </style>
-
 <body>
-    <a href="#">
+    
+  <div class="element">
+    
+    <div class="title-agenda">
     <h2>Agenda do dia</h2>
-    <hr>
-    <p>Campeonato Brasileiro <span class="horarios"><b>Hoje 20:00</b></span>
-    <p>
-    <p>BAH<img class="time-mandante" src="/assets/img/Bahia.png">
-        <span class="vs">X</span>
-        SAN<img class="time-visitante" src="/assets/img/Santos.png">
-        <br><br>
-        <span class="informacao">
-            <i>FIQUE POR DENTRO</i>
-        </span>
-    </p>
+    </div>
 
+    <hr>
+    
+    <div class="title-horarios">
+        <p>Campeonato Brasileiro</p> <span><b>Hoje 20:00</b></span>
+    </div>
+
+    <div class="alinha-agenda">
+        <div class="times-agenda">
+            
+            <div class="linha-time">
+                <p>BAH</p><img class="time-mandante" src="/assets/img/Bahia.png">
+            </div>
+
+                <span class="vs">X</span>
+
+            <div class="linha-time">
+                SAN<img class="time-visitante" src="/assets/img/Santos.png">
+            </div>
+
+                <span class="informacao">
+                    <i>FIQUE POR DENTRO</i>
+                </span>
+
+        </div>
+    </div>
+
+
+    <!-- <div class="times-agenda">
     <p>Campeonato Brasileiro <span class="horarios"><b>Hoje 21:00</b></span>
     <p>
     <p>COR<img class="time-mandante" src="/assets/img/Corinthians.png">
@@ -101,8 +152,10 @@ body {
             <i>FIQUE POR DENTRO</i>
         </span>
     </p>
+    </div>
 
-    <p>Campeonato Brasileiro Série B <span class="horarios2"><b>Hoje 21:00</b></span>
+    <div class="times-agenda">
+    <p>Campeonato Brasileiro Série B</p><span class="horarios2"><b>Hoje 21:00</b></span>
     <p>
     <p>NOV<img class="time-mandante" src="/assets/img/Novorizontino.png">
         <span class="vs">X</span>
@@ -111,18 +164,11 @@ body {
         <span class="informacao">
             <i>FIQUE POR DENTRO</i>
         </span>
-    </p>
-</a>
-<hr>
-<a href="#">
-    <div class="mais-jogos">
-    <h2>Mais jogos <img style="margin-left: 10px;" width="30" height="25" src="c:\Users\55119\Downloads\icons8-arrow-30.png"/></h2>
-  </a> 
 
-  <div class="element">
-
-    
+    </div> -->
   </div>
+
+  <!-- <div class="ao-vivo"><i>Ao vivo</i></div> -->
 </body>
 
 </html>
