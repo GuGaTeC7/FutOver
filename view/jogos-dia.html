@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agenda do dia</title>
-</head>
-<style>
-body {
-    background-color: rgba(0, 0, 0, 0.13);
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&disp");
+    body {
+      background-color: rgba(0, 0, 0, 0.13);
+      font-family: "Poppins";
+    }
+
+         @keyframes pisca{
+    0%   {background-color: red;}
+  25%  {background-color: rgba(255, 0, 0, 0.644);}
+  50%  {background-color: rgba(255, 0, 0, 0.397);}
+  100% {background-color: rgba(255, 94, 0, 0.233);}
+  100%   {background-color: red;}
+  50%  {background-color: rgba(255, 0, 0, 0.644);}
+  25%  {background-color: rgba(255, 0, 0, 0.397);}
+  0% {background-color: rgba(255, 94, 0, 0.233);}
 }
 
-    .horarios {
-        margin: 160px;
+.ao-vivo {
+  display: none;
+  width: 50px; 
+  background: #cd3529;
+  color: #fff;
+  animation-name: pisca;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+} 
+
+    /* AGENDA DO DIA */
+    .agenda-icon-time-esq {
+      width: 40px;
+      height: 40px;
+      margin-left: 5px;
     }
 
-    .time-mandante {
-        width: 25px;
-        height: 25px;
-        margin-left: 5px;
+    .agenda-icon-time-dir {
+      width: 40px;
+      height: auto;
+      margin-right: 5px;
     }
 
-    .vs {
-        margin: 120px;
+    .time-icon {
+      width: 100%;
     }
 
     .time-visitante {
-        width: 25px;
-        height: 25px;
-        margin-left: 5px;
+      width: 25px;
+      height: 25px;
+      margin-left: 5px;
     }
 
     .informacao {
-        background: transparent;
-        color: green;
-        margin: 120px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 19px;
+      font-weight: 600;
+      color: green;
+      transition: .1s ease-in-out;
+      cursor: pointer;
     }
 
-    .horarios2 {
-        margin: 110px;
+    .informacao:hover{
+      filter: brightness(1.5);
     }
 
-    a{
-        color: black;
-        text-decoration: none;
+    a {
+      color: black;
+      text-decoration: none;
     }
 
     div a {
@@ -56,26 +83,26 @@ body {
     }
 
     .element {
-  width: 450px;
-  height: 340px;
-  padding-top: 0px;
-  padding-right: 24px;
-  padding-bottom: 0px;
-  padding-left: 24px;
-  margin-left: 50px;
-  margin-top: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 7px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-}
+      width: 450px;
+      height: 660px;
+      padding-top: 0px;
+      padding-right: 24px;
+      padding-bottom: 0px;
+      padding-left: 24px;
+      margin-left: 50px;
+      margin-top: 50px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 7px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
 
-.element:first-child {
-  margin-top: 15px;
-}
-</style>
+    .element:first-child {
+      margin-top: 15px;
+    }
 
+<<<<<<< HEAD
 <body>
     
     <a href="#">
@@ -91,35 +118,27 @@ body {
             <i>FIQUE POR DENTRO</i>
         </span>
     </p>
+=======
+    .agenda {
+        margin-top: 10px;
+    }
+>>>>>>> ecd838bbbbd0ddfe96712bb03102dd131f48c46f
 
-    <p>Campeonato Brasileiro <span class="horarios"><b>Hoje 21:00</b></span>
-    <p>
-    <p>COR<img class="time-mandante" src="/assets/img/Corinthians.png">
-        <span class="vs">X</span>
-        GRE<img class="time-visitante" src="/assets/img/Gremio.png">
-        <br><br>
-        <span class="informacao">
-            <i>FIQUE POR DENTRO</i>
-        </span>
-    </p>
+    .linha-time-dir {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 140px;
+    }
 
-    <p>Campeonato Brasileiro Série B <span class="horarios2"><b>Hoje 21:00</b></span>
-    <p>
-    <p>NOV<img class="time-mandante" src="/assets/img/Novorizontino.png">
-        <span class="vs">X</span>
-        CEA<img class="time-visitante" src="/assets/img/Ceara.png">
-        <br><br>
-        <span class="informacao">
-            <i>FIQUE POR DENTRO</i>
-        </span>
-    </p>
-</a>
-<hr>
-<a href="#">
-    <div class="mais-jogos">
-    <h2>Mais jogos <img style="margin-left: 10px;" width="30" height="25" src="c:\Users\55119\Downloads\icons8-arrow-30.png"/></h2>
-  </a> 
+    .linha-time-esq {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 140px;
+    }
 
+<<<<<<< HEAD
   <div class="element">
 <div style="display: flex;flex-direction: column;">
         <h2>Agenda do dia</h2>
@@ -141,5 +160,187 @@ body {
 </div>
   </div>
 </body>
+=======
+    .title-horarios {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
 
+    .times-agenda {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+>>>>>>> ecd838bbbbd0ddfe96712bb03102dd131f48c46f
+
+    .linha-completa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .title-horarios p {
+      font-weight: 300;
+    }
+
+    .alinha-agenda {
+      justify-content: center;
+      display: flex;
+    }
+
+    .mais-jogos{
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #127315;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      transition: .1s ease-in-out;
+      margin-top: 4%;
+    }
+
+    .mais-jogos:hover{
+      filter: brightness(1.5);
+      cursor: pointer;
+    }
+
+    .title-agenda h2 {
+      font-weight: 600;
+    }
+  </style>
+  <body>
+    <div class="element-agenda">
+      <div class="hr">
+        <div class="title-agenda">
+          <h2>Agenda do dia</h2>
+        </div>
+
+        <hr />
+
+        <div class="agenda">
+          <div class="title-horarios">
+            <p>Campeonato Brasileiro</p>
+            <span><b>Hoje: 20:00</b></span>
+          </div>
+          <div
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <div class="alinha-agenda">
+              <div class="times-agenda">
+                <div class="linha-completa">
+                  <div class="linha-time-esq">
+                    BAH
+                    <div class="agenda-icon-time-esq">
+                      <img
+                        class="time-icon"
+                        src="/assets/img/bahia-sem-estrela.png"
+                      />
+                    </div>
+                  </div>
+
+                  <span class="vs">X</span>
+
+                  <div class="linha-time-dir">
+                    <div class="agenda-icon-time-dir">
+                      <img class="time-icon" src="/assets/img/Santos.png" />
+                    </div>
+                    SAN
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="informacao">
+              <i>FIQUE POR DENTRO</i>
+            </span>
+          </div>
+        </div>
+
+        <div class="agenda">
+            <div class="title-horarios">
+              <p>Campeonato Brasileiro</p>
+              <span><b>Hoje: 21:00</b></span>
+            </div>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div class="alinha-agenda">
+                <div class="times-agenda">
+                  <div class="linha-completa">
+                    <div class="linha-time-esq">
+                      COR
+                      <div class="agenda-icon-time-esq">
+                        <img
+                          class="time-icon"
+                          src="/assets/img/Corinthians.png"
+                        />
+                      </div>
+                    </div>
+  
+                    <span class="vs">X</span>
+  
+                    <div class="linha-time-dir">
+                      <div class="agenda-icon-time-dir">
+                        <img class="time-icon" src="/assets/img/gremio.png.png" />
+                      </div>
+                      GRE
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="informacao">
+                <i>FIQUE POR DENTRO</i>
+              </span>
+            </div>
+          </div>
+
+          <div class="agenda" style="margin-bottom: 20px;">
+            <div class="title-horarios">
+              <p>Campeonato Brasileiro Série B</p>
+              <span><b>Hoje: 21:00</b></span>
+            </div>
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div class="alinha-agenda">
+                <div class="times-agenda">
+                  <div class="linha-completa">
+                    <div class="linha-time-esq">
+                      NOV
+                      <div class="agenda-icon-time-esq">
+                        <img
+                          class="time-icon"
+                          src="/assets/img/Novorizontino.png"
+                        />
+                      </div>
+                    </div>
+  
+                    <span class="vs">X</span>
+  
+                    <div class="linha-time-dir">
+                      <div class="agenda-icon-time-dir">
+                        <img class="time-icon" src="/assets/img/Ceara.png" />
+                      </div>
+                      CEA
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="informacao">
+                <i>FIQUE POR DENTRO</i>
+              </span>
+            </div>
+          </div>
+          
+          <hr>
+
+          <span class="mais-jogos">
+            <i>Mais jogos</i> <img src="/assets/img/seta-verde.png" style="width: 25px; height: 25px; margin-left: 5px;">
+          </span>
+
+    <!-- <div class="ao-vivo"><i>Ao vivo</i></div> -->
+  </body>
 </html>
