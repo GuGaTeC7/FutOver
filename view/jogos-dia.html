@@ -299,6 +299,49 @@
             <i>Mais jogos</i> <img src="/assets/img/seta-verde.png" style="width: 25px; height: 25px; margin-left: 5px;">
           </span>
 
+          <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <section class="area-Login">
+        <div class="Login">
+            <img src="https://raichu-uploads.s3.amazonaws.com/logo_onefootball-brasil_z2h5mt.png">
+            <form method="post" id="loginForm">
+                <input type="text" id="nome" name="nome" placeholder="Nome de Usuário" autofocus>
+                <input type="password" id="senha" name="senha" placeholder="Sua Senha">
+                <input class="input-submit" type="submit" value="Entrar">
+                <p>Ainda não possui uma conta? <a href="/view/tela_cadastro.html" style="text-decoration:underline;">Crie sua conta</a></p>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evitar o envio do formulário
+
+            // Obter os valores de entrada
+            var username = document.getElementById("nome").value;
+            var password = document.getElementById("senha").value;
+
+            // Dados de usuário predefinidos (substitua por seus próprios dados)
+            var usuarios_registrados = {'usuario1': 'senha123', 'usuario2': 'senha456'};
+
+            // Verificar as credenciais
+            if (usuarios_registrados.hasOwnProperty(username) && usuarios_registrados[username] === password) {
+                alert("Login bem-sucedido!");
+                // Redirecionar ou realizar ações desejadas após o login bem-sucedido
+            } else {
+                alert("Nome de usuário ou senha incorretos. Tente novamente.");
+            }
+        });
+    </script>
+</body>
+</html>
+
+
     <!-- <div class="ao-vivo"><i>Ao vivo</i></div> -->
   </body>
 </html>
