@@ -8,10 +8,14 @@
 }
 
 body {
-  background-color: rgba(247, 247, 247, 0.8470588235) !important;
+  background-color: #242424 !important;
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+nav {
+  background-color: #239b3b !important;
 }
 
 /**/
