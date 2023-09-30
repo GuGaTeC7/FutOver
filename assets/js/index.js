@@ -74,3 +74,22 @@ function mudaCorE() {
   document.getElementById("serieB").setAttribute("style", "display:none;");
   document.getElementById("serieA").setAttribute("style", "display:none;");
 }
+
+// VALIDAÇÃO LOGIN
+function validaLogin(nome,senha) {
+  var nome = document.getElementById("nome");
+  var senha = document.getElementById("senha");
+
+  var user = 'Guga';
+  var senhaCerta = '123';
+
+  alert(nome);
+  alert(senha);
+
+  /*if(nome == user && senha == senhaCerta){
+    alert("Logado");
+  }
+  else {
+    alert("Errado");
+  } */
+}
