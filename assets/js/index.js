@@ -78,28 +78,6 @@ function mudaCorE() {
 // VALIDAÇÃO LOGIN
 
 // VALIDAÇÃO EMAIL
-function validarCadastro() {
-  var nomeCompleto = document.querySelector('input[name="nomeCompleto"]').value;
-  var nomeUsuario = document.querySelector('input[name="nomeUsuario"]').value;
-  var email = document.querySelector('input[name="email"]').value;
-  var telefone = document.querySelector('input[name="telefone"]').value;
-  var senha = document.querySelector('input[name="senha"]').value;
-  var confirmarSenha = document.querySelector('input[name="confirmarSenha"]').value;
-  var sexo = document.querySelector('input[name="gender"]:checked');
 
-  // Validação simples: Verifica se os campos obrigatórios estão preenchidos
-  if (!nomeCompleto || !nomeUsuario || !email || !telefone || !senha || !confirmarSenha || !sexo) {
-    alert('Todos os campos devem ser preenchidos.');
-    return false;
-  }
 
-  // Validação mais específica, por exemplo, verificar se as senhas coincidem
-  if (senha !== confirmarSenha) {
-    alert('As senhas não coincidem.');
-    return false;
-  }
-
-  // Aqui você pode adicionar mais validações, como verificar o formato do email
-
-  return true; // Permite o envio do formulário se todas as validações passarem
-}
+  

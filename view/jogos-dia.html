@@ -217,12 +217,14 @@ function logar() {
             message: 'Login realizado com sucesso!',
             size: 'small',
             callback: function () {
-                // Redireciona para a página desejada após o usuário clicar em "OK"
                 window.location.href = 'http://127.0.0.1:5501/view/index.html';
             }
         });
     } else {
-        bootbox.alert("Nome de usuário ou senha inválidos!");
+        bootbox.alert({
+            message: 'Nome de usuário ou senha inválidos!',
+            size: 'small'
+        });
     }
 }
 
