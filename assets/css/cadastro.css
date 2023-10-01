@@ -90,11 +90,12 @@ form .button input {
   font-weight: 500;
   border-radius: 5px;
   letter-spacing: 1px;
-  background: linear-gradient(135deg, #239b3b, #239b3b);
+  background-color: rgb(29, 211, 59);
 }
 
 form .button input:hover {
   background: linear-gradient(135deg, #239b3b, #239b3b);
+  cursor: pointer;
 }
 
 /* FOOTER */
