@@ -747,6 +747,10 @@ th {
   margin-top: 18px;
 }
 
+.vs {
+  margin: 0 10px 0 10px;
+}
+
 .element-agenda hr{
   margin-top: 10px !important;
   margin-left: 0 !important;
@@ -826,6 +830,10 @@ div a {
 
 .agenda:first-child {
   margin-top: 0px;
+}
+
+.alinha-agenda h2{
+  
 }
 
 .linha-time-dir {

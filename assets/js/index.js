@@ -77,7 +77,7 @@ function mudaCorE() {
 
 // VALIDAÇÃO LOGIN
 document.getElementById('loginForm').addEventListener('submit', function (e) {
-  e.preventDefault(); // Impede o envio padrão do formulário
+  e.preventDefault(); 
 });
 
 function logar() {
@@ -87,7 +87,6 @@ var senha = document.getElementById('senha').value;
 var usuariosCadastrados = ['admin', 'gustavo'];
 var senhasCadastradas = ['admin', 'gustavo'];
 
-// Verifica se tanto o nome de usuário quanto a senha estão nas respectivas listas
 if (usuariosCadastrados.includes(login) && senhasCadastradas.includes(senha)) {
     bootbox.alert({
         message: 'Login realizado com sucesso!',
