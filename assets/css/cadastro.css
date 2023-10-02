@@ -22,6 +22,7 @@ nav {
 #container {
   max-width: 700px;
   width: 80%;
+  height: 570px;
   background: #ffffff;
   padding: 25px 30px;
   border-radius: 5px;
@@ -77,10 +78,10 @@ form .user-details .input-box {
 
 form .button {
   height: 45px;
-  margin: 45px 0;
+  margin: 30px 0;
 }
 
-form .button input {
+form .button button {
   height: 100%;
   width: 100%;
   outline: none;
@@ -93,9 +94,40 @@ form .button input {
   background-color: rgb(29, 211, 59);
 }
 
-form .button input:hover {
+form .button button:hover {
   background: linear-gradient(135deg, #239b3b, #239b3b);
   cursor: pointer;
+}
+
+.gender-details {
+  font-size: 17px;
+}
+
+.termos {
+  display: flex; 
+  font-size: 17px; 
+  margin-bottom: 15px;
+}
+
+.termos input {
+  margin-right: 5px; 
+  width: 18px;
+}
+
+.termos span {
+  color: #007bff;
+}
+
+.termos-span:hover {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.politica-span:hover {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* FOOTER */
