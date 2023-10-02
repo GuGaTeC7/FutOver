@@ -76,20 +76,8 @@ function mudaCorE() {
 }
 
 // VALIDAÇÃO LOGIN
-function validaLogin(nome,senha) {
-  var nome = document.getElementById("nome");
-  var senha = document.getElementById("senha");
 
-  var user = 'Guga';
-  var senhaCerta = '123';
+// VALIDAÇÃO EMAIL
 
-  alert(nome);
-  alert(senha);
 
-  /*if(nome == user && senha == senhaCerta){
-    alert("Logado");
-  }
-  else {
-    alert("Errado");
-  } */
-}
+  

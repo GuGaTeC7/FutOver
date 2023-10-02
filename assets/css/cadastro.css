@@ -8,10 +8,14 @@
 }
 
 body {
-  background-color: rgba(247, 247, 247, 0.8470588235) !important;
+  background-color: #242424 !important;
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+nav {
+  background-color: #239b3b !important;
 }
 
 /**/
@@ -86,11 +90,12 @@ form .button input {
   font-weight: 500;
   border-radius: 5px;
   letter-spacing: 1px;
-  background: linear-gradient(135deg, #239b3b, #239b3b);
+  background-color: rgb(29, 211, 59);
 }
 
 form .button input:hover {
   background: linear-gradient(135deg, #239b3b, #239b3b);
+  cursor: pointer;
 }
 
 /* FOOTER */

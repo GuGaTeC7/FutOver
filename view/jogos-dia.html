@@ -6,10 +6,18 @@
     <title>Agenda do dia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integridade="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" origem cruzada ="anônimo">
+  
   </head>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&disp");
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
       background-color: rgba(0, 0, 0, 0.13);
       font-family: "Poppins";
@@ -214,139 +222,18 @@
     .title-agenda h2 {
       font-weight: 600;
     }
+
+    #regulamento:hover {
+      color: #29ca2e;
+    } 
+    .modal-header {
+      padding: 0 15px 0 0;
+    }
   </style>
   <body>
-    <div class="element-agenda">
-      <div class="hr">
-        <div class="title-agenda">
-          <h2>Agenda do dia</h2>
-        </div>
 
-        <hr />
-
-        <div class="agenda">
-          <div class="title-horarios">
-            <p>Campeonato Brasileiro</p>
-            <span><b>Hoje: 20:00</b></span>
-          </div>
-          <div
-            style="display: flex; flex-direction: column; align-items: center"
-          >
-            <div class="alinha-agenda">
-              <div class="times-agenda">
-                <div class="linha-completa">
-                  <div class="linha-time-esq">
-                    BAH
-                    <div class="agenda-icon-time-esq">
-                      <img
-                        class="time-icon"
-                        src="/assets/img/bahia-sem-estrela.png"
-                      />
-                    </div>
-                  </div>
-
-                  <span class="vs">X</span>
-
-                  <div class="linha-time-dir">
-                    <div class="agenda-icon-time-dir">
-                      <img class="time-icon" src="/assets/img/Santos.png" />
-                    </div>
-                    SAN
-                  </div>
-                </div>
-              </div>
-            </div>
-            <span class="informacao">
-              <i>FIQUE POR DENTRO</i>
-            </span>
-          </div>
-        </div>
-
-        <div class="agenda">
-            <div class="title-horarios">
-              <p>Campeonato Brasileiro</p>
-              <span><b>Hoje: 21:00</b></span>
-            </div>
-            <div
-              style="display: flex; flex-direction: column; align-items: center"
-            >
-              <div class="alinha-agenda">
-                <div class="times-agenda">
-                  <div class="linha-completa">
-                    <div class="linha-time-esq">
-                      COR
-                      <div class="agenda-icon-time-esq">
-                        <img
-                          class="time-icon"
-                          src="/assets/img/Corinthians.png"
-                        />
-                      </div>
-                    </div>
-  
-                    <span class="vs">X</span>
-  
-                    <div class="linha-time-dir">
-                      <div class="agenda-icon-time-dir">
-                        <img class="time-icon" src="/assets/img/gremio.png.png" />
-                      </div>
-                      GRE
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <span class="informacao">
-                <i>FIQUE POR DENTRO</i>
-              </span>
-            </div>
-          </div>
-
-          <div class="agenda" style="margin-bottom: 20px;">
-            <div class="title-horarios">
-              <p>Campeonato Brasileiro Série B</p>
-              <span><b>Hoje: 21:00</b></span>
-            </div>
-            <div
-              style="display: flex; flex-direction: column; align-items: center"
-            >
-              <div class="alinha-agenda">
-                <div class="times-agenda">
-                  <div class="linha-completa">
-                    <div class="linha-time-esq">
-                      NOV
-                      <div class="agenda-icon-time-esq">
-                        <img
-                          class="time-icon"
-                          src="/assets/img/Novorizontino.png"
-                        />
-                      </div>
-                    </div>
-  
-                    <span class="vs">X</span>
-  
-                    <div class="linha-time-dir">
-                      <div class="agenda-icon-time-dir">
-                        <img class="time-icon" src="/assets/img/Ceara.png" />
-                      </div>
-                      CEA
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <span class="informacao">
-                <i>FIQUE POR DENTRO</i>
-              </span>
-            </div>
-          </div>
-          
-          <hr>
-
-          <span class="mais-jogos">
-            <i>Mais jogos</i> <img src="/assets/img/seta-verde.png" style="width: 25px; height: 25px; margin-left: 5px;">
-          </span>
-
-          <hr>
-          
-          <form>
+              
+        <form>
             <label for="login">Nome de Usuário:</label>
             <input type="text" id="login" name="login" required><br><br>
     
@@ -355,27 +242,38 @@
     
             <input type="button" value="Login" onclick="logar()">
         </form>
-    
-        <script>
-            function logar() {
-                var login = document.getElementById('login').value;
-                var senha = document.getElementById('senha').value;
-    
-                var usuariosCadastrados = ['admin', 'gustavo', 'nicolas'];
-                var senhasCadastradas = ['admin', 'gustavo', 'nicolas'];
-    
-                // Verifica se tanto o nome de usuário quanto a senha estão nas respectivas listas
-                if (usuariosCadastrados.includes(login) && senhasCadastradas.includes(senha)) {
-                    alert('Sucesso!');
-                    window.location.href = 'http://127.0.0.1:5501/view/index.html';
-                } else {
-                    alert("Nome de usuário ou senha inválidos!");
-                }
+
+      <script>
+
+        
+function logar() {
+    var login = document.getElementById('login').value;
+    var senha = document.getElementById('senha').value;
+
+    var usuariosCadastrados = ['admin', 'gustavo'];
+    var senhasCadastradas = ['admin', 'gustavo'];
+
+    // Verifica se tanto o nome de usuário quanto a senha estão nas respectivas listas
+    if (usuariosCadastrados.includes(login) && senhasCadastradas.includes(senha)) {
+        bootbox.alert({
+            message: 'Login realizado com sucesso!',
+            size: 'small',
+            callback: function () {
+                window.location.href = 'http://127.0.0.1:5501/view/index.html';
             }
+        });
+    } else {
+        bootbox.alert({
+            message: 'Nome de usuário ou senha inválidos!',
+            size: 'small'
+        });
+    }
+}
+
         </script>
 
-    <!-- <div class="ao-vivo"><i>Ao vivo</i></div> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js" integrity="sha512-oVbWSv2O4y1UzvExJMHaHcaib4wsBMS5tEP3/YkMP6GmkwRJAa79Jwsv+Y/w7w2Vb/98/Xhvck10LyJweB8Jsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.js" integrity="sha512-kwtW9vT4XIHyDa+WPb1m64Gpe1jCeLQLorYW1tzT5OL2l/5Q7N0hBib/UNH+HFVjWgGzEIfLJt0d8sZTNZYY6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integridade="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
 </html>
