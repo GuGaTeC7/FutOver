@@ -5,8 +5,11 @@
   <title>Cadastro</title>
   <link rel="stylesheet"  href="/assets/css/cadastro.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.7/dist/css/bootstrap.min.css" integridade="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" origem cruzada ="anônimo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
   
@@ -93,38 +96,13 @@
               </div>
             </div>
             <div class="button">
+              <label for="" class="termos" >
+                <input type="checkbox" id="termos">
+                Li e concordo com os&nbsp;<span class="termos-span">Termos de Uso</span>&nbsp;e&nbsp;<span class="politica-span">Política de Privacidade</span>.</label>
               <button type="button" onclick="validaCadastro()">Cadastrar</button>
             </div>          
           </form>
         </div>
-
-  <script>
-    function validaCadastro() {
-          const nome = document.getElementById('nome').value;
-          const nomeUsuario = document.getElementById('nomeUsuario').value;
-          const email = document.getElementById('email').value;
-          const telefone = document.getElementById('telefone').value;
-          const senha = document.getElementById('senha').value;
-          const senhaC = document.getElementById('senhaC').value;
-          const sexo = document.querySelector('input[name="gender"]:checked');
-
-          if (!nome || !nomeUsuario || !email || !telefone || !senha || !senhaC || !sexo) {
-            bootbox.alert({
-            message: 'Nome de usuário ou senha inválidos!',
-            size: 'small'
-          });
-            return;
-          }
-
-          if (senha !== senhaC) {
-            alert('As senhas não coincidem.');
-            return;
-          }
-
-          alert('Cadastro realizado com sucesso!');
-        }
-
-  </script>
 
   
             <!-- FOOTER -->
@@ -182,13 +160,11 @@
                       </div>
                   </div>
               </footer>
-
-
-
-  
+              
+    <script src="/assets/js/index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.6.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js"></script>  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.7/dist/js/bootstrap.min.js" integridade="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integridade="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

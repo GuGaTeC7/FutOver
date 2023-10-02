@@ -6,43 +6,161 @@
     <title>FutOver</title>
     <link rel="stylesheet" href="/assets/css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integridade="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" origem cruzada ="anônimo">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>  
-      <!-- NavBar -->
-      <nav class="navbar navbar-expand-lg"  id="navP">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" id="nav1" href="#">Jogos</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" id="nav1" href="#">Times</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="nav1" href="#">Competições</a>
-              </li>
-              <form class="form-inline my-2 my-lg-0">
-                
-              </ul>
-              </form> 
+ <!-- NAVBAR -->
+ <nav class="navbar navbar-expand-lg"  id="navP">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" id="nav1" href="#">Jogos</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" id="escudo" href="#">Times</a>
+
+    <!-- MODAL TIMES -->
+    <div class="timesCompleto">
+      <div id="triangulo-para-cima"></div>
+          <div class="times">
+            <div class="header-time">
+              <label for="#" class="L-time" id="serieAButton" onclick="mudaCorA()" style="border-bottom-color: green; color: rgb(24, 139, 24); border-radius: 3px 0 0 3px;">Série A</label>
+              <label for="#" class="L-time" id="serieBButton" onclick="mudaCorB()" style="border-left: none; border-radius: inherit;">Série B</label>
+              <label for="#" class="L-time" id="europaButton" onclick="mudaCorE()" style="border-left: none; border-radius: 0 3px 3px 0;">Europa</label>
+            </div>
+
+            <!-- SÉRIE A -->
+            <div class="times-grid-A" id="serieA">
+              <!-- Linha 1 -->
+              <div class="icon-times"><img class="imagem-com-tooltip" src="/assets/img/america-mineiro-logo-1AAEF3C345-seeklogo.com.png" alt="América-Mineiro" title="América-Mineiro"/></div>
+              <div class="icon-times"><img class="imagem-com-tooltip" src="/assets/img/athletico-paranaense-logo-escudo-1.png" alt="Atlético-Paranaense" title="Atlético-PR"/></div>
+              <div class="icon-times"><img class="imagem-com-tooltip" src="/assets/img/atletico-mineiro-logo-escudo-6.png" alt="Atlético-Mineiro" title="Atlético-MG" /></div>
+              <div class="icon-times"><img class="imagem-com-tooltip" src="/assets/img/e-c-bahia-logo-escudo-1.png" alt="Bahia" title="Bahia" /></div>
               
-              <a class="navbar-brand" href="/view/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAkFBMVEXh/1caGhoAABTm/1kAAA8AABbV8FTp/1oYGBrM41AAABLs/1sXFhkVFBkUEhkRDxgJAxdqdzANCRgrLx43PCHG3E4AAAhRWimitUIkKBsyNx+arT/f+Vaqv0UtMh6JmDm3zUlIUSZ4hjWNnzsdHhlcZyxkby5xfTI/RiMgIxuAkDa/1UyxxkeUpj1XYCo6QSJ6s4lJAAAFA0lEQVRoge1a25aqOhCEtEmEcPG6Rx0YFUfHEd3+/98dQMcBU+heAZ8O9QhrddGVpG/Bsjp06NChQ4cOHRAEwoPnbeFPT8OfJVEKnvc+ZVusNGO2hp6wZML15+ydWuN9CzXz4Zu0xMLXnvd9pzXaqQvciomOQIbRW3syb0e6W4wstRuA75m1JTN0a/ClLDH3tOfevLXtLBYBcGuKd9tg15bMNATmw7Wy1F9dfpsdW5JZnQCtzWOyRNDXnvsfLcms3sFetoMJWfQOPoh/tSNzRqs7VRwiS03AsrtpKzLLA0O04T575wB3g33UBqvYorW9uCs3KEYemrtL1uwbmLbzkJRZV2M9RmanqykvRcc1A5YL69ki0rQHZF43oSWSJE5rV88FF/CE8pVHMm+MeB1hRZEVTWfJmrE6VtsvIiF96jHSdo0Orxr3XD5gPZcNaklz49mmsmgFjnX4ZuIuOfmKoWNTVbmIDJSgVGSU8QmtmIbgo7AdhUhmo8NL85rtW4bnOjkvxUDmkVEqohQFYs2lY2GbhigVxUYyoxrtDn12urgkQn0f9JkBa7ZioHjQLC8vtDjjD5WJu8enMt9oYcFlc6OMT0NwMCrw2OZn3zgjXWbPNopV4vPJyQ14/EMrUQnCE6PdPHsiM587v3bXIJ7xlZHMaMVKzvYSeTNLKdj5wdksJYCDcYPPFquSiFkRAtxdmsgMV+zGOj9RxZkJ6oqmJu4SWrHC3shdbESFlVZA5tAo49MUyuyFzP8bizsB1RdsPo1kXt7L7Pkjxufrd4c0PyKQPzzbrPk8M8Y4HxTgnLGBPf67OQoFnKAjcHe0NdrN0XQVzzaHZJjh67CZxakgJbGpdptPyoo5KVUOKUkXt/SNoJL3PtucpeAPxKmotR6/DgqdOLet5rMeAsRxf9xGV/QQuPlMXu6u3L+u+XwEB3RF/sfLaWkJggZfvp73DGrsnvNqXji4C84vP7yw+eSnl8scfSCZXx8jYfO5L5frJPMAr+qSiiEvqrF5KRVJkZ52+wy7TRq1t+pirLcy/dFNZukkkyx1h0EQDBifJE5LzLj53F5lpijhvLT8AR8lohW1JeyKrs0npeP7xNzn87QNlx0wSvG+L6lIzlwQuP3erDmxfNB81owxs0NmVGdWeeu7IhnX0GbEjUsCx9dtB5NCZuHVjkayCrcZsdygjH/IZVTbB70z3zXkReNmnhYztPrmKgMzalB/QCnwKVznMsN7hl8Y1vQ/7sI5aNF8iofu2l6/yQUafYPmc5BbhKVe5esaXBjCNbzMQeXuoczNrpTUF+qKiimaAkpU4JuNIApIkBL6rEhFCpSYFXhj48qAYnTzeT2ZT3m/jTcWXEM3/kfeT2PeCLjrBddU9JTX+Iq0pvm8uKv4k0mfvzB1l7ao+bzGPwUu4SswvwFHzafnX08HoYuzMpjRSC23jKZqg585KGwiyuCm7SL6naHUfKoPkKl+EezNWC1yoMy3ch3uutIHmtZYuCsqLRqdH+ys0PhqNkI9PivFgixp1B8l47RPKUpF53JXpM8Zf1U2bsrhTzj8VFk0+M9D4e3QOBfBn3DCu5AbDaHUDWhxxl/f3xXRQb+5DZtcu//rHFSuFtX7cZ9NjiY3WVeIvsvu4fogwxDNvl1+GaD3Q+6O3x+NV58ichCgRVLpcj3Ifznj62WqXj72KDHLjE0Iq3Z63aFDhw4dOnT4P+E/c7ZN3fwnpjwAAAAASUVORK5CYII=" alt="logo" class="logo"></a>
-              
+              <!-- Linha 2 -->
+              <div class="icon-times"><img src="/assets/img/botafogo-logo-escudo.png" alt="Botafogo" title="Botafogo" /></div>
+              <div class="icon-times"><img src="/assets/img/Red-Bull-PNG-Pic.png" alt="Bragantino" title="Bragantino" /></div>
+              <div class="icon-times"><a href="https://onefootball.com/pt-br/time/corinthians-1649"><img src="/assets/img/logo-corinthians-512.png" alt="Corinthians" title="Corinthians" /></div></a>
+              <div class="icon-times"><img src="/assets/img/coritiba-logo-escudo.png" alt="Coritiba" title="Coritiba" /></div>
+  
+              <!-- Linha 3 -->
+              <div class="icon-times"><img src="/assets/img/cruzeiro-logo-escudo-.png" alt="Cruzeiro" title="Cruzeiro" /></div>
+              <div class="icon-times"><img src="/assets/img/cuiaba-logo-escudo-1.png" alt="Cuiabá" title="Cuiabá" /></div>
+              <div class="icon-times"><img src="/assets/img/flamengo.png.png" alt="Flamengo" title="Flamengo" /></div>
+              <div class="icon-times"><img src="/assets/img/fluminense.png.png" alt="Fluminense" title="Fluminense" /></div>
+  
+              <!-- Linha 4 -->
+              <div class="icon-times"><img src="/assets/img/fortaleza-ec-logo-escudo-4.png" alt="Fortaleza" title="Fortaleza" /></div>
+              <div class="icon-times"><img src="/assets/img/goias-logo-0-1.png" alt="Goiás" title="Goiás" /></div>
+              <div class="icon-times"><img src="/assets/img/gremio.png.png" alt="Grêmio" title="Grêmio" /></div>
+              <div class="icon-times"><img src="/assets/img/internacional-logo-0.png" alt="Internacional" title="Internacional" /></div>
+  
+              <!-- Linha 5 -->
+              <div class="icon-times"><img src="/assets/img/palmeiras-logo-4.png" alt="Palmeiras" title="Palmeiras" /></div>
+              <div class="icon-times"><img src="/assets/img/Santos_Logo.png" alt="Santos" title="Santos" /></div>
+              <div class="icon-times"><img src="/assets/img/sao-paulo-futebol-clube-logo-C5FC046703-seeklogo.com.png" alt="São Paulo" title="São Paulo" /></div>
+              <div class="icon-times"><img src="/assets/img/vasco-logo-1.png" alt="Vasco" title="Vasco" /></div>
             
-            <form class="form-inline">
-              <button class="btn" id="btnLogin" id="btnLogin" type="button"><a href="/view/tela-login.html" style="color: inherit; text-decoration: none;">Login</a></button>
-              <button class="btn" id="btnCadastro" type="button"><a href="/view/tela_cadastro.html" style="color: inherit; text-decoration: none;">Cadastre-se</a></button>
-            </form>
+            </div>
+
+          <!-- SÉRIE B -->
+          <div class="times-grid-B" id="serieB" style="display:none;">
+            <!-- Linha 1 -->
+            <div class="icon-times"><img src="/assets/img/ABC_FC_(E)_-_RN.svg.png" alt="ABC" title="ABC"/></div>
+            <div class="icon-times"><img src="/assets/img/Atlético_Goianiense.svg.png" alt="Atlético-GO" title="América-Mineiro"/></div>
+            <div class="icon-times"><img src="/assets/img/Avai_FC_(05-E)_-_SC.svg.png" alt="Avaí" title="Avaí"/></div>
+            <div class="icon-times"><img src="/assets/img/BotafogoFCSP2021.png" alt="Botafogo" title="Botafogo"/></div>
             
+            <!-- Linha 2 -->
+            <div class="icon-times"><img src="/assets/img/1200px-Guarani_FC_logo.svg.png"alt="Guarani" title="Guarani"/></div>
+            <div class="icon-times"><img src="/assets/img/ItuanoFC.png" alt="Ituano" title="Ituano"/></div>
+            <div class="icon-times"><img src="/assets/img/ec-juventude-logo-escudo.png" alt="Juventude" title="Juventude"/></div>
+            <div class="icon-times"><img src="/assets/img/LondrinaEC.png" alt="Londrina" title="Londrina"/></div>
+
+            <!-- Linha 3 -->
+            <div class="icon-times"><img src="/assets/img/mirassol-logo-escudo-1.png" alt="Mirassol" title="Mirassol"/></div>
+            <div class="icon-times"><img src="/assets/img/gremio-novorizontino-logo-escudo.png" alt="Novorizontino" title="Novorizontino"/></div>
+            <div class="icon-times"><img src="/assets/img/Escudo_Oficial_Ponte_Preta.png" alt="Ponte Preta" title="Ponte Preta"/></div>
+            <div class="icon-times"><img src="/assets/img/sampaio-correa-logo-escudo.png" alt="Sampaio Corrêa" title="Sampaio Corrêa"/></div>
+
+            <!-- Linha 4 -->
+            <div class="icon-times"><img src="/assets/img/Ceará_Sporting_Club_logo.svg.png" alt="Ceará" title="Ceará"/></div>
+            <div class="icon-times"><img src="/assets/img/2560px-EscudoCriciumaEC.svg.png" alt="Criciúma" title="Criciúma"/></div>
+            <div class="icon-times"><img src="/assets/img/internacional-logo-0.png" alt="Internacional" title="Internacional"/></div>
+            <div class="icon-times"><img src="/assets/img/CRB_logo.svg.png" alt="CRB" title="CRB"/></div>
+
+            <!-- Linha 5 -->
+            <div class="icon-times"><img src="/assets/img/sport-recife-logo-escudo-2.png" alt="Sport" title="Sport"/></div>
+            <div class="icon-times"><img src="/assets/img/tombense-fc-logo.png" alt="Tombense" title="Tombense"/></div>
+            <div class="icon-times"><img src="/assets/img/VilaNovaFC2021.png" alt="Vila Nova" title="Vila Nova"/></div>
+            <div class="icon-times"><img src="/assets/img/ec-vitoria-logo-1.png" alt="Vitória" title="Vitória"/></div>
           </div>
-        </nav>
+
+          <!-- EUROPA -->
+          <div class="times-grid-E" id="serieE" style="display:none;">
+            <!-- Linha 1 -->
+            <div class="icon-times"><img src="/assets/img/Arsenal_FC.svg.png" /></div>
+            <div class="icon-times"><img src="/assets/img/atletico-madrid-logo-0.png" /></div>
+            <div class="icon-times"><img src="/assets/img/FCBarcelona.svg.png" /></div>
+            <div class="icon-times"><img src="/assets/img/FC_Bayern_München_logo_(2017).svg.png" /></div>
+            
+            <!-- Linha 2 -->
+            <div class="icon-times"><img src="/assets/img/SL_Benfica_logo.svg.png" /></div>
+            <div class="icon-times"><img src="/assets/img/bvb-borussia-dortmund-logo-1.png"/></div>
+            <div class="icon-times"><img src="/assets/img/Chelsea_FC.svg.png" /></div>
+            <div class="icon-times"><img src="/assets/img/FC_Internazionale_Milano_2021.svg.png" /></div>
+
+            <!-- Linha 3 -->
+            <div class="icon-times"><img src="/assets/img/Juventus_Logo.png" /></div>
+            <div class="icon-times"><img src="/assets/img/Liverpool_FC.svg.png" /></div>
+            <div class="icon-times"><img src="/assets/img/Manchester_City_FC_badge.svg.png" /></div>
+            <div class="icon-times"><img src="/assets/img/Manchester_United_FC_crest.svg.png" /></div>
+
+            <!-- Linha 4 -->
+            <div class="icon-times"><img src="/assets/img/milan-logo-1.png" /></div>
+            <div class="icon-times"><img src="/assets/img/SSC_Napoli.svg.png" /></div>
+            <div class="icon-times"><img src="/assets/img/Newcastle_United_Logo.svg.png" /></div>
+            <div class="icon-times"><img src="/assets/img/psg-logo-escudo-paris-saint-germain.png" /></div>
+
+            <!-- Linha 5 -->
+            <div class="icon-times"><img src="/assets/img/fc-porto-logo-1.png" /></div>
+            <div class="icon-times"><img src="/assets/img/real-madrid-logo-0.png" /></div>
+            <div class="icon-times"><img src="/assets/img/sevilla-fc-logo-0.png" /></div>
+            <div class="icon-times"><img src="/assets/img/Tottenham_Hotspur.svg.png" /></div>
+          </div>
+        
+        </div>
+      </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav1" href="#">Competições</a>
+          </li>
+          <form class="form-inline my-2 my-lg-0">
+            <li>
+              <div class="box">
+                <div class="container-2"><span class="icon"><i class="fa fa-search"></i></span>
+                  <input id="search" type="search" placeholder="Pesquisar..."/>
+                </div>
+              </div>  
+            </li>
+          </ul>
+          </form> 
+          
+          <a class="navbar-brand" href="/view/index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB3CAMAAAAO5y+4AAAAkFBMVEXh/1caGhoAABTm/1kAAA8AABbV8FTp/1oYGBrM41AAABLs/1sXFhkVFBkUEhkRDxgJAxdqdzANCRgrLx43PCHG3E4AAAhRWimitUIkKBsyNx+arT/f+Vaqv0UtMh6JmDm3zUlIUSZ4hjWNnzsdHhlcZyxkby5xfTI/RiMgIxuAkDa/1UyxxkeUpj1XYCo6QSJ6s4lJAAAFA0lEQVRoge1a25aqOhCEtEmEcPG6Rx0YFUfHEd3+/98dQMcBU+heAZ8O9QhrddGVpG/Bsjp06NChQ4cOHRAEwoPnbeFPT8OfJVEKnvc+ZVusNGO2hp6wZML15+ydWuN9CzXz4Zu0xMLXnvd9pzXaqQvciomOQIbRW3syb0e6W4wstRuA75m1JTN0a/ClLDH3tOfevLXtLBYBcGuKd9tg15bMNATmw7Wy1F9dfpsdW5JZnQCtzWOyRNDXnvsfLcms3sFetoMJWfQOPoh/tSNzRqs7VRwiS03AsrtpKzLLA0O04T575wB3g33UBqvYorW9uCs3KEYemrtL1uwbmLbzkJRZV2M9RmanqykvRcc1A5YL69ki0rQHZF43oSWSJE5rV88FF/CE8pVHMm+MeB1hRZEVTWfJmrE6VtsvIiF96jHSdo0Orxr3XD5gPZcNaklz49mmsmgFjnX4ZuIuOfmKoWNTVbmIDJSgVGSU8QmtmIbgo7AdhUhmo8NL85rtW4bnOjkvxUDmkVEqohQFYs2lY2GbhigVxUYyoxrtDn12urgkQn0f9JkBa7ZioHjQLC8vtDjjD5WJu8enMt9oYcFlc6OMT0NwMCrw2OZn3zgjXWbPNopV4vPJyQ14/EMrUQnCE6PdPHsiM587v3bXIJ7xlZHMaMVKzvYSeTNLKdj5wdksJYCDcYPPFquSiFkRAtxdmsgMV+zGOj9RxZkJ6oqmJu4SWrHC3shdbESFlVZA5tAo49MUyuyFzP8bizsB1RdsPo1kXt7L7Pkjxufrd4c0PyKQPzzbrPk8M8Y4HxTgnLGBPf67OQoFnKAjcHe0NdrN0XQVzzaHZJjh67CZxakgJbGpdptPyoo5KVUOKUkXt/SNoJL3PtucpeAPxKmotR6/DgqdOLet5rMeAsRxf9xGV/QQuPlMXu6u3L+u+XwEB3RF/sfLaWkJggZfvp73DGrsnvNqXji4C84vP7yw+eSnl8scfSCZXx8jYfO5L5frJPMAr+qSiiEvqrF5KRVJkZ52+wy7TRq1t+pirLcy/dFNZukkkyx1h0EQDBifJE5LzLj53F5lpijhvLT8AR8lohW1JeyKrs0npeP7xNzn87QNlx0wSvG+L6lIzlwQuP3erDmxfNB81owxs0NmVGdWeeu7IhnX0GbEjUsCx9dtB5NCZuHVjkayCrcZsdygjH/IZVTbB70z3zXkReNmnhYztPrmKgMzalB/QCnwKVznMsN7hl8Y1vQ/7sI5aNF8iofu2l6/yQUafYPmc5BbhKVe5esaXBjCNbzMQeXuoczNrpTUF+qKiimaAkpU4JuNIApIkBL6rEhFCpSYFXhj48qAYnTzeT2ZT3m/jTcWXEM3/kfeT2PeCLjrBddU9JTX+Iq0pvm8uKv4k0mfvzB1l7ao+bzGPwUu4SswvwFHzafnX08HoYuzMpjRSC23jKZqg585KGwiyuCm7SL6naHUfKoPkKl+EezNWC1yoMy3ch3uutIHmtZYuCsqLRqdH+ys0PhqNkI9PivFgixp1B8l47RPKUpF53JXpM8Zf1U2bsrhTzj8VFk0+M9D4e3QOBfBn3DCu5AbDaHUDWhxxl/f3xXRQb+5DZtcu//rHFSuFtX7cZ9NjiY3WVeIvsvu4fogwxDNvl1+GaD3Q+6O3x+NV58ichCgRVLpcj3Ifznj62WqXj72KDHLjE0Iq3Z63aFDhw4dOnT4P+E/c7ZN3fwnpjwAAAAASUVORK5CYII=" alt="logo" class="logo"></a>
+          
+        
+        <form class="form-inline">
+          <button class="btn" id="btnLogin" id="btnLogin" type="button"><a href="/view/tela-login.html" style="color: inherit; text-decoration: none;">Login</a></button>
+          <button class="btn" id="btnCadastro" type="button"><a href="/view/tela_cadastro.html" style="color: inherit; text-decoration: none;">Cadastre-se</a></button>
+        </form>
+        
+      </div>
+    </nav>
 
 <!-- LOGIN -->
 <section class="area-Login">
@@ -50,7 +168,10 @@
         <img src="https://raichu-uploads.s3.amazonaws.com/logo_onefootball-brasil_z2h5mt.png">
         <form method="post" id="loginForm">
             <input type="text" id="nome" name="nome" placeholder="Nome de Usuário" required>
-            <input type="password" id="senha" name="senha" placeholder="Sua Senha" required>
+            <div class="input-box">
+                <input type="password" id="senha" name="senha" placeholder="Sua Senha" required>
+                <img width="18" height="18" src="/assets/img/icons8-visível-20.png" alt="visible--v1" id="olho"/>
+            </div>
             <button class="input-submit" onclick="logar()" type="submit">Enviar</button>
             <p>Ainda não possui uma conta? <a href="/view/tela_cadastro.html" style="text-decoration:underline;">Crie sua conta</a></p>
         </form>
@@ -107,42 +228,9 @@
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<script>
-  document.getElementById('loginForm').addEventListener('submit', function (e) {
-      e.preventDefault(); // Impede o envio padrão do formulário
-  });
-
-  function logar() {
-    var login = document.getElementById('nome').value;
-    var senha = document.getElementById('senha').value;
-
-    var usuariosCadastrados = ['admin', 'gustavo'];
-    var senhasCadastradas = ['admin', 'gustavo'];
-
-    // Verifica se tanto o nome de usuário quanto a senha estão nas respectivas listas
-    if (usuariosCadastrados.includes(login) && senhasCadastradas.includes(senha)) {
-        bootbox.alert({
-            message: 'Login realizado com sucesso!',
-            size: 'small',
-            callback: function () {
-                window.location.href = 'http://127.0.0.1:5501/view/index.html';
-            }
-        });
-    } else {
-        bootbox.alert({
-            message: 'Nome de usuário ou senha inválidos!',
-            size: 'small'
-        });
-    }
-}
-
-</script>
+<script src="/assets/js/index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js"></script>  
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integridade="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integridade="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

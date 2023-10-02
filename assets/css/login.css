@@ -194,11 +194,10 @@ hr {
   margin-top: 10px;
   background-color: #ffffff;
   padding-left: 10px;
-  color: rgba(78, 78, 78, 0.4392156863);
   height: 45px;
   outline: none;
   border-radius: 8px;
-  border: 1px solid;
+  border: 1px solid rgba(78, 78, 78, 0.4392156863);
 }
 
 .input-submit {
@@ -377,6 +376,113 @@ button:active {
 
 .footer-col .form-sub button:hover {
   background-color: rgb(216, 216, 216);
+}
+
+/* MODAL TIMES */
+.timesCompleto {
+  display: none;
+  margin-left: 16px;
+}
+
+.times {
+  width: 264px;
+  height: 395px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+  border-radius: 4.5px;
+  position: absolute;
+  z-index: 2;
+}
+
+.header-time {
+  display: flex;
+  justify-content: center;
+}
+
+.L-time {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 78px;
+  justify-content: center;
+  display: flex;
+  padding: 2px;
+  font-weight: 750;
+  color: rgba(0, 0, 0, 0.514);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.times-grid-A {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-left: 10px;
+}
+
+.times-grid-B {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-left: 15px;
+  position: absolute;
+  z-index: 2;
+}
+
+.times-grid-E {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: 2;
+}
+
+.times-grid-E > .icon-times img {
+  width: 95%;
+}
+
+.icon-times img {
+  width: 100%;
+}
+
+.icon-times {
+  width: 35px;
+  margin-top: 5px;
+}
+
+#triangulo-para-cima {
+  width: 0;
+  height: 0;
+  border-left: 18px solid #239b3b;
+  border-right: 18px solid #239b3b;
+  border-bottom: 18px solid rgb(255, 255, 255);
+  position: absolute;
+  top: 65.6%;
+}
+
+
+/* PASSWORD REAVEL */
+.input-box {
+  display: flex;
+  align-items: center;
+}
+
+.input-box input {
+  width: 500px;
+}
+
+.input-box img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 10px 0 0 10px;
 }
 
 @media (max-width: 800px) {
