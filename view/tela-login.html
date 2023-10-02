@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/assets/css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integridade="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" origem cruzada ="anônimo">
 </head>
 <body>  
       <!-- NavBar -->
@@ -49,7 +51,7 @@
         <form method="post" id="loginForm">
             <input type="text" id="nome" name="nome" placeholder="Nome de Usuário" required>
             <input type="password" id="senha" name="senha" placeholder="Sua Senha" required>
-            <button class="input-submit" type="submit">Enviar</button>
+            <button class="input-submit" onclick="logar()" type="submit">Enviar</button>
             <p>Ainda não possui uma conta? <a href="/view/tela_cadastro.html" style="text-decoration:underline;">Crie sua conta</a></p>
         </form>
     </div>
@@ -114,6 +116,33 @@
       e.preventDefault(); // Impede o envio padrão do formulário
   });
 
+  function logar() {
+    var login = document.getElementById('nome').value;
+    var senha = document.getElementById('senha').value;
+
+    var usuariosCadastrados = ['admin', 'gustavo'];
+    var senhasCadastradas = ['admin', 'gustavo'];
+
+    // Verifica se tanto o nome de usuário quanto a senha estão nas respectivas listas
+    if (usuariosCadastrados.includes(login) && senhasCadastradas.includes(senha)) {
+        bootbox.alert({
+            message: 'Login realizado com sucesso!',
+            size: 'small',
+            callback: function () {
+                window.location.href = 'http://127.0.0.1:5501/view/index.html';
+            }
+        });
+    } else {
+        bootbox.alert({
+            message: 'Nome de usuário ou senha inválidos!',
+            size: 'small'
+        });
+    }
+}
+
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integridade="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
