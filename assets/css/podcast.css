@@ -1,0 +1,70 @@
+ .element-podcast {
+    width: 450px;
+    height: 520px;
+    padding-top: 0px;
+    padding-right: 24px;
+    padding-bottom: 0px;
+    padding-left: 24px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .element:first-child {
+    margin-top: 15px;
+  }
+
+  .img {
+    width: 100px;
+    height: 60px;  
+    float: right;
+    position: relative;
+    top: -30px;
+  }
+
+  .img2 {
+    width: 100px;
+    height: 60px;  
+    float: right;
+    position: relative;
+    top: -55px;
+  }
+
+  .img3 {
+    width: 100px;
+    height: 60px;
+    float: right;
+    position: relative;
+    top: -60px;
+  }
+
+  .fonte-cor {
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -1px;
+    font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: green;
+    text-decoration: none;
+
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .mais-podcasts{
+    text-decoration: none;
+    color: green;
+    font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .Podcast{
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
