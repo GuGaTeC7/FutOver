@@ -1,0 +1,49 @@
+.element-blogs {
+    width: 450px;
+    height: 450px;
+    padding-top: 0px;
+    padding-right: 24px;
+    padding-bottom: 0px;
+    padding-left: 24px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .element:first-child {
+    margin-top: 15px;
+  }
+
+  .bolgs{
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .fonte-cor {
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -1px;
+    font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: green;
+    text-decoration: none;
+  }
+
+
+  .mais-blogs {
+    font-size: 17px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: green;
+    font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .seta{
+    margin: -23px;
+    margin-left: 84px;
+  }
