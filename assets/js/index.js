@@ -151,6 +151,10 @@ function validaCadastro() {
   const senhaC = document.getElementById('senhaC').value;
   const sexo = document.querySelector('input[name="gender"]:checked');
   const termos = document.getElementById('termos');
+  const logradouro = document.getElementById('logradouro').value;
+  const bairro = document.getElementById('bairro').value;
+  const cep = document.getElementById('cep').value;
+
 
   if (!nome) {
     bootbox.alert({
@@ -203,7 +207,30 @@ function validaCadastro() {
   });
     return;
   }
-
+  if (!cep) {
+    bootbox.alert({
+    message: 'Insira seu <b>CEP</b>!',
+    size: 'small',
+    buttons: {
+        ok: {
+            className: 'btn btn-success'
+        }
+    }
+  });
+    return;
+  }
+  if (!logradouro) {
+    bootbox.alert({
+    message: 'Insira seu <b>CEP</b> para que o Logradouro e o Bairro sejam preenchidos!',
+    size: 'small',
+    buttons: {
+        ok: {
+            className: 'btn btn-success'
+        }
+    }
+  });
+    return;
+  }
   if (!senha) {
     bootbox.alert({
     message: 'Insira uma <b>Senha</b>!',
@@ -253,7 +280,7 @@ function validaCadastro() {
     }
   });
     return;
-  }
+  } 
 
 
   // VALIDA SENHA
