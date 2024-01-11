@@ -95,9 +95,6 @@ if (usuariosCadastrados.includes(login) && senhasCadastradas.includes(senha)) {
             ok: {
                 className: 'btn btn-success'
             }
-        },
-        callback: function () {
-            window.location.href = 'http://127.0.0.1:5501/view/homeLogado.html';
         }
     });
     } else if (login === '' || senha === '') {
@@ -303,9 +300,6 @@ function validaCadastro() {
         ok: {
             className: 'btn btn-success'
         }
-    },
-    callback: function () {
-        window.location.href = 'http://127.0.0.1:5501/view/homeLogado.html';
     }
   });
   }
